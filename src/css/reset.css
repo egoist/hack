@@ -1,0 +1,17 @@
+html {
+  font-size: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hack {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}

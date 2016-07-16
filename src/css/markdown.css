@@ -1,0 +1,202 @@
+/**
+ * code by https://github.com/mrcoles/markdown-css
+ * with some modifications
+ */
+
+.hack {
+  word-wrap: break-word;
+}
+.hack,
+.hack h1,
+.hack h2,
+.hack h3,
+.hack h4,
+.hack h5,
+.hack h6,
+.hack pre,
+.hack code,
+.hack blockquote,
+.hack em,
+.hack strong,
+.hack code {
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: consolas, monaco, courier, "courier new", fixed-width;
+  color: #333333;
+}
+.hack h1,
+.hack h2,
+.hack h3,
+.hack h4,
+.hack h5,
+.hack h6,
+.hack pre,
+.hack code,
+.hack blockquote,
+.hack ol,
+.hack ul,
+.hack li,
+.hack p,
+.hack section,
+.hack header,
+.hack footer {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+.hack h1,
+.hack p,
+.hack ul,
+.hack ol,
+.hack pre,
+.hack blockquote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hack h1 {
+  position: relative;
+  display: inline-block;
+  display: table-cell;
+  padding: 20px 0 40px;
+  margin: 0;
+  overflow: hidden;
+}
+.hack h1:after {
+  content: "====================================================================================================";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+.hack h1 + * {
+  margin-top: 0;
+}
+.hack h2,
+.hack h3,
+.hack h4,
+.hack h5,
+.hack h6 {
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+.hack h2:before,
+.hack h3:before,
+.hack h4:before,
+.hack h5:before,
+.hack h6:before {
+  content: "## ";
+  display: inline;
+}
+.hack h3:before {
+  content: "### ";
+}
+.hack h4:before {
+  content: "#### ";
+}
+.hack h5:before {
+  content: "##### ";
+}
+.hack h6:before {
+  content: "###### ";
+}
+.hack li {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+  padding-left: 4ch;
+}
+.hack li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hack ul > li:after {
+  content: "-";
+}
+.hack ol {
+  counter-reset: ol;
+}
+.hack ol > li:after {
+  content: counter(ol) ".";
+  counter-increment: ol;
+}
+.hack pre {
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+.hack pre code {
+  font-weight: 100;
+}
+.hack blockquote {
+  position: relative;
+  padding-left: 17px;
+  padding-left: 2ch;
+  overflow: hidden;
+}
+.hack blockquote:after {
+  content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+  white-space: pre;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+}
+.hack strong:before,
+.hack strong:after {
+  content: "__";
+  display: inline;
+}
+.hack em:before,
+.hack em:after {
+  content: "*";
+  display: inline;
+}
+.hack a {
+  cursor: pointer;
+  color: #FF2E88;
+  text-decoration: none;
+  border-bottom: 1px solid #FF2E88;
+}
+.hack a:hover {
+  background-color: #FF2E88;
+  color: white;
+}
+.hack code {
+  font-weight: 700;
+}
+.hack code:before,
+.hack code:after {
+  content: "`";
+  display: inline;
+}
+.hack pre code:before,
+.hack pre code:after {
+  content: none;
+}
+.hack hr {
+  position: relative;
+  height: 20px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  border: 0;
+  margin-bottom: 20px;
+}
+.hack hr:after {
+  content: "----------------------------------------------------------------------------------------------------";
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+  width: 100%;
+  word-wrap: break-word;
+}
+@-moz-document url-prefix() {
+  .hack h1 {
+    display: block;
+  }
+}
+.hack-ones ol > li:after {
+  content: "1.";
+}

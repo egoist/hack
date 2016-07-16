@@ -1,0 +1,260 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title hack.css
+    link(rel="stylesheet" href="./prism.css")
+    link(rel="stylesheet" href="./hack.css")
+  body.hack
+    .main.container
+      h1 hack.css - the CSS framework for hackers
+
+      p As what you can see, this website is proudly using hack.css.
+
+      h2 About
+
+      p As many hackers enjoy the readability of markdown code, some stylings in hack.css are exactly the way markdown is.
+
+      ul
+        li conquer the world
+        li rule the web
+        li copy the code
+
+      p 
+        a(target="_blank" href="https://daringfireball.net/projects/markdown/") kinda cool, huh?
+
+      p hack.css is a superset of <a target="_blank" href="https://github.com/mrcoles/markdown-css">markdown.css</a> with more common UI utilities plugged in.
+
+
+      :marked
+        ```js
+        // some random code
+        import Vue from 'vue'
+        import App from './app'
+
+        new Vue({
+          el: '#app',
+          render: h => h(App)
+        })
+        ```
+      p
+        | The code looks not bad, you can use <a target="_blank" href="http://prismjs.com/">prism.js</a> to make it pretty.
+
+      h2 How to use?
+
+      p Install via npm by running <code>npm install -S hack</code> and load it with your preferred pre-processor.
+
+      p You can also simply hot-link the url of css file.
+
+      p The last step is to add <code>.hack</code> class to your body element.
+
+      :marked
+        ```html
+        <head>
+          <link href="/path/to/hack.css" ref="stylesheet" />
+        </head>
+        <body class="hack">
+          ...
+        </body>
+        ```
+
+      h2 User guide
+
+      h3 Basic
+
+      p Use <code>.container</code> to centerlize to main content.
+
+      p User <strong>flexbox</strong> to make layouts,  hack.css uses <a href="https://github.com/1000ch/grd" target="_blank">grd.css</a> to provide a flexbox based grid system.
+
+      h3 <code>.grid</code> modifiers
+      ul
+        li
+          | To align items with 
+          code align-items
+          ul
+            li
+              code -top
+              | : To top
+            li
+              code -middle
+              | : To middle
+            li
+              code -bottom
+              | : To bottom
+            li
+              code -stretch
+              | : Stretch items
+            li
+              code -baseline
+              | : To baseline
+        li
+          | To layout contents with 
+          code justify-content
+          ul
+            li
+              code -left
+              | : To left
+            li
+              code -center
+              | : To center
+            li
+              code -right
+              | : To right
+            li
+              code -between
+              | : Add spaces between items
+            li
+              code -around
+              | : Add spaces around items
+
+      h3 <code>.cell</code> modifiers
+      ul
+        li
+          code -fill
+          | : Set item width to left width of parent
+        li
+          code -1of12
+          | : Set item width to 8.3% of parent
+        li
+          code -2of12
+          | : Set item width to 16.7% of parent
+        li
+          code -3of12
+          | : Set item width to 25% of parent
+        li
+          code -4of12
+          | : Set item width to 33% of parent
+        li
+          code -5of12
+          | : Set item width to 41.7% of parent
+        li
+          code -6of12
+          | : Set item width to 50% of parent
+        li
+          code -7of12
+          | : Set item width to 58.3% of parent
+        li
+          code -8of12
+          | : Set item width to 66.7% of parent
+        li
+          code -9of12
+          | : Set item width to 75% of parent
+        li
+          code -10of12
+          | : Set item width to 83.3% of parent
+        li
+          code -11of12
+          | : Set item width to 91.7% of parent
+        li
+          code -12of12
+          | : Set item width to 100% of parent
+
+      h3 Components
+
+      h4 Form
+
+      form
+        fieldset.form-group
+          label(for="username") USERNAME:
+          input.form-control#username(type="text" placeholder="type your name...")
+
+        fieldset.form-group
+          label(for="email") EMAIL:
+          input.form-control#email(type="email" placeholder="")
+
+        fieldset.form-group
+          label(for="password") PASSWORD:
+          input.form-control#password(type="password" placeholder="")
+
+        fieldset.form-group
+          label(for="country") COUNTRY:
+          select.form-control#country
+            option China
+            option U.S.
+            option U.K.
+            option Japan
+
+        .form-actions
+          button.btn(type="button") Submit
+
+      :marked
+        ```html
+        <form>
+          <fieldset class="form-group">
+            <label for="username">USERNAME:</label>
+            <input id="username" type="text" placeholder="type your name..." class="form-control">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="email">EMAIL:</label>
+            <input id="email" type="email" placeholder="" class="form-control">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="password">PASSWORD:</label>
+            <input id="password" type="password" placeholder="" class="form-control">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="country">COUNTRY:</label>
+            <select id="country" class="form-control">
+              <option>China</option>
+              <option>U.S.</option>
+              <option>U.K.</option>
+              <option>Japan</option>
+            </select>
+          </fieldset>
+          <div class="form-actions">
+            <button type="button" class="btn">Submit</button>
+          </div>
+        </form>
+        ```
+
+      h5 Stateful Form
+
+      form
+        fieldset.form-group.form-success
+          label(for="username") USERNAME:
+          input.form-control#username(type="text" placeholder="type your name...")
+
+        fieldset.form-group.form-error
+          label(for="email") EMAIL:
+          input.form-control#email(type="email" placeholder="")
+
+        fieldset.form-group.form-warning
+          label(for="password") PASSWORD:
+          input.form-control#password(type="password" placeholder="")
+
+      :marked
+        ```html
+        .form-group.form-success
+        .form-group.form-error
+        .form-group.form-warning
+        ```
+
+      h4 Table
+
+      :marked
+        |editor|speed|extension|interface|
+        |---|---|---|---|
+        |sublime|90|80|70|
+        |atom|60|85|80|
+        |vscode|80|65|60|
+
+      h4 Progress bar
+
+      .progress-bar.progress-bar-show-percent
+        .progress-bar-filled(style="width:40%;" data-filled="40%")
+
+
+      :marked
+        ```html
+        <!-- with only an arrow -->
+        <div class="progress-bar">
+          <div class="progress-bar-filled" style="width: 40%"></div>
+        </div>
+
+        <!-- with a percent number -->
+        <div class="progress-bar progress-bar-show-percent" data-filled="40%">
+          <div class="progress-bar-filled" style="width: 40%"></div>
+        </div>
+        ```
+    script(src="./prism.js" async)
+    script(src="./app.js" async)
