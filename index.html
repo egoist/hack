@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hack.css</title>
+    <link rel="stylesheet" href="./prism.css">
+    <link rel="stylesheet" href="./hack.css">
+  </head>
+  <body class="hack">
+    <div class="main container">
+      <h1>hack.css - the CSS framework for hackers</h1>
+      <p>As what you can see, this website is proudly using hack.css.</p>
+      <h2>About</h2>
+      <p>As many hackers enjoy the readability of markdown code, some stylings in hack.css are exactly the way markdown is.</p>
+      <ul>
+        <li>conquer the world</li>
+        <li>rule the web</li>
+        <li>copy the code</li>
+      </ul>
+      <p> <a target="_blank" href="https://daringfireball.net/projects/markdown/">kinda cool, huh?</a></p>
+      <p>hack.css is a superset of <a target="_blank" href="https://github.com/mrcoles/markdown-css">markdown.css</a> with more common UI utilities plugged in.</p><pre><code class="lang-js">// some random code
+import Vue from &#39;vue&#39;
+import App from &#39;./app&#39;
+
+new Vue({
+  el: &#39;#app&#39;,
+  render: h =&gt; h(App)
+})
+</code></pre>
+
+      <p>The code looks not bad, you can use <a target="_blank" href="http://prismjs.com/">prism.js</a> to make it pretty.</p>
+      <h2>How to use?</h2>
+      <p>Install via npm by running <code>npm install -S hack</code> and load it with your preferred pre-processor.</p>
+      <p>You can also simply hot-link the url of css file.</p>
+      <p>The last step is to add <code>.hack</code> class to your body element.</p><pre><code class="lang-html">&lt;head&gt;
+  &lt;link href=&quot;/path/to/hack.css&quot; ref=&quot;stylesheet&quot; /&gt;
+&lt;/head&gt;
+&lt;body class=&quot;hack&quot;&gt;
+  ...
+&lt;/body&gt;
+</code></pre>
+
+      <h2>User guide</h2>
+      <h3>Basic</h3>
+      <p>Use <code>.container</code> to centerlize to main content.</p>
+      <p>User <strong>flexbox</strong> to make layouts,  hack.css uses <a href="https://github.com/1000ch/grd" target="_blank">grd.css</a> to provide a flexbox based grid system.</p>
+      <h3><code>.grid</code> modifiers</h3>
+      <ul>
+        <li>To align items with <code>align-items</code>
+          <ul>
+            <li><code>-top</code>: To top</li>
+            <li><code>-middle</code>: To middle</li>
+            <li><code>-bottom</code>: To bottom</li>
+            <li><code>-stretch</code>: Stretch items</li>
+            <li><code>-baseline</code>: To baseline</li>
+          </ul>
+        </li>
+        <li>To layout contents with <code>justify-content</code>
+          <ul>
+            <li><code>-left</code>: To left</li>
+            <li><code>-center</code>: To center</li>
+            <li><code>-right</code>: To right</li>
+            <li><code>-between</code>: Add spaces between items</li>
+            <li><code>-around</code>: Add spaces around items</li>
+          </ul>
+        </li>
+      </ul>
+      <h3><code>.cell</code> modifiers</h3>
+      <ul>
+        <li><code>-fill</code>: Set item width to left width of parent</li>
+        <li><code>-1of12</code>: Set item width to 8.3% of parent</li>
+        <li><code>-2of12</code>: Set item width to 16.7% of parent</li>
+        <li><code>-3of12</code>: Set item width to 25% of parent</li>
+        <li><code>-4of12</code>: Set item width to 33% of parent</li>
+        <li><code>-5of12</code>: Set item width to 41.7% of parent</li>
+        <li><code>-6of12</code>: Set item width to 50% of parent</li>
+        <li><code>-7of12</code>: Set item width to 58.3% of parent</li>
+        <li><code>-8of12</code>: Set item width to 66.7% of parent</li>
+        <li><code>-9of12</code>: Set item width to 75% of parent</li>
+        <li><code>-10of12</code>: Set item width to 83.3% of parent</li>
+        <li><code>-11of12</code>: Set item width to 91.7% of parent</li>
+        <li><code>-12of12</code>: Set item width to 100% of parent</li>
+      </ul>
+      <h3>Components</h3>
+      <h4>Form</h4>
+      <form>
+        <fieldset class="form-group">
+          <label for="username">USERNAME:</label>
+          <input id="username" type="text" placeholder="type your name..." class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="email">EMAIL:</label>
+          <input id="email" type="email" placeholder="" class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="password">PASSWORD:</label>
+          <input id="password" type="password" placeholder="" class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="country">COUNTRY:</label>
+          <select id="country" class="form-control">
+            <option>China</option>
+            <option>U.S.</option>
+            <option>U.K.</option>
+            <option>Japan</option>
+          </select>
+        </fieldset>
+        <div class="form-actions">
+          <button type="button" class="btn">Submit</button>
+        </div>
+      </form><pre><code class="lang-html">&lt;form&gt;
+  &lt;fieldset class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;username&quot;&gt;USERNAME:&lt;/label&gt;
+    &lt;input id=&quot;username&quot; type=&quot;text&quot; placeholder=&quot;type your name...&quot; class=&quot;form-control&quot;&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;email&quot;&gt;EMAIL:&lt;/label&gt;
+    &lt;input id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;&quot; class=&quot;form-control&quot;&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;password&quot;&gt;PASSWORD:&lt;/label&gt;
+    &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;&quot; class=&quot;form-control&quot;&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;country&quot;&gt;COUNTRY:&lt;/label&gt;
+    &lt;select id=&quot;country&quot; class=&quot;form-control&quot;&gt;
+      &lt;option&gt;China&lt;/option&gt;
+      &lt;option&gt;U.S.&lt;/option&gt;
+      &lt;option&gt;U.K.&lt;/option&gt;
+      &lt;option&gt;Japan&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/fieldset&gt;
+  &lt;div class=&quot;form-actions&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+
+      <h5>Stateful Form</h5>
+      <form>
+        <fieldset class="form-group form-success">
+          <label for="username">USERNAME:</label>
+          <input id="username" type="text" placeholder="type your name..." class="form-control">
+        </fieldset>
+        <fieldset class="form-group form-error">
+          <label for="email">EMAIL:</label>
+          <input id="email" type="email" placeholder="" class="form-control">
+        </fieldset>
+        <fieldset class="form-group form-warning">
+          <label for="password">PASSWORD:</label>
+          <input id="password" type="password" placeholder="" class="form-control">
+        </fieldset>
+      </form><pre><code class="lang-html">.form-group.form-success
+.form-group.form-error
+.form-group.form-warning
+</code></pre>
+
+      <h4>Table</h4><table>
+<thead>
+<tr>
+<th>editor</th>
+<th>speed</th>
+<th>extension</th>
+<th>interface</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sublime</td>
+<td>90</td>
+<td>80</td>
+<td>70</td>
+</tr>
+<tr>
+<td>atom</td>
+<td>60</td>
+<td>85</td>
+<td>80</td>
+</tr>
+<tr>
+<td>vscode</td>
+<td>80</td>
+<td>65</td>
+<td>60</td>
+</tr>
+</tbody>
+</table>
+
+      <h4>Progress bar</h4>
+      <div class="progress-bar progress-bar-show-percent">
+        <div style="width:40%;" data-filled="40%" class="progress-bar-filled"></div>
+      </div><pre><code class="lang-html">&lt;!-- with only an arrow --&gt;
+&lt;div class=&quot;progress-bar&quot;&gt;
+  &lt;div class=&quot;progress-bar-filled&quot; style=&quot;width: 40%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- with a percent number --&gt;
+&lt;div class=&quot;progress-bar progress-bar-show-percent&quot; data-filled=&quot;40%&quot;&gt;
+  &lt;div class=&quot;progress-bar-filled&quot; style=&quot;width: 40%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+    </div>
+    <script src="./prism.js" async></script>
+    <script src="./app.js" async></script>
+  </body>
+</html>
