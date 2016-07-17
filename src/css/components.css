@@ -75,12 +75,12 @@
   overflow: auto;
   & label {
     border-bottom: 2px solid #ccc;
-    padding: 8px 0;
     color: #333;
-    padding-right: 1rem;
     min-width: 9rem;
     display: inline-block;
     height: 38px;
+    line-height: 38px;
+    padding: 0;
     float: left;
   }
 
@@ -119,19 +119,157 @@ select.form-control {
   -ms-appearance: none;
 }
 
-.form-actions {
-  margin-bottom: 1.75rem;
-  & .btn {
-    font-size: calc(14 / 12)rem;
-  }
+.help-block {
+  color: #999;
+  margin-top: .5rem;
 }
 
+.form-actions {
+  margin-bottom: 1.75rem;
+}
+
+/**
+ * Buttons
+ */
+
 .btn {
+  cursor: pointer;
   outline: none;
-  border: 1px solid #f0f0f0;
+  border: none;
   background-color: #f0f0f0;
   color: #333;
   padding: 0 2rem;
-  height: 38px;
-  line-height: 38px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 1rem;
+}
+
+.btn-success {
+  color: white;
+  background-color: $green;
+}
+
+.btn-error {
+  color: white;
+  background-color: $red;
+}
+
+.btn-warning {
+  color: white;
+  background-color: $orange;
+}
+
+.btn-info {
+  color: white;
+  background-color: $cyan;
+}
+
+.btn-primary {
+  color: white;
+  background-color: $blue;
+}
+.btn-dark {
+  color: white;
+  background-color: black;
+}
+
+/** 
+ * Card
+ */
+.card {
+  border: 1px solid #ccc;
+  & .card-header {
+    color: #333;
+    text-align: center;
+    background-color: #ddd;
+    padding: .5rem 0;
+  }
+}
+
+/**
+ * Alerts
+ */
+.alert {
+  color: #ccc;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1.75rem;
+}
+
+@define-mixin alert $color {
+  color: $color;
+  border-color: $color;
+}
+
+.alert-success {
+  @mixin alert $green;
+}
+
+.alert-error {
+  @mixin alert $red;
+}
+
+.alert-info {
+  @mixin alert $cyan;
+}
+
+.alert-warning {
+  @mixin alert $orange;
+}
+
+/**
+ * Media
+ */
+.media:not(:last-child) {
+  margin-bottom: calc(15/12)rem;
+}
+
+.media-left {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 1rem;
+}
+
+.media-right {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 1rem;
+}
+
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-heading {
+  font-size: calc(14/12)rem;
+  font-weight: 700;
+}
+
+.media-content {
+  margin-top: .3rem;
+}
+
+/** 
+ * Holders
+ */
+.placeholder,
+.avatarholder {
+  background-color: #f0f0f0;
+  text-align: center;
+  color: #b9b9b9;
+  font-size: 1rem;
+}
+
+.avatarholder {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.rounded {
+    border-radius: 33px;
+  }
 }

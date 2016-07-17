@@ -6,3 +6,11 @@
   max-width: 70rem;
   margin: auto;
 }
+
+.inner {
+  padding: 1rem;
+}
+
+.inner2x {
+  padding: 2rem;
+}
