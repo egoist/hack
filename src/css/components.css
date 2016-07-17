@@ -100,35 +100,31 @@ table {
   outline: none;
   border: none;
   border-bottom: 2px solid #ccc;
-  padding: 8px 0;
+  padding: .5rem 0;
   width: 240px;
   height: 38px;
   &:focus {
-    border-bottom-color: #555;
+    border-color: #555;
   }
 }
 
-.textarea {
-  display: inline-block;
-  border: 2px solid #ccc;
-  border-top: none;
-  border-right: none;
-  position: relative;
-  & textarea.form-control {
-    height: auto;
-    resize: none;
-    padding: 1rem;
-    border-bottom: none;
-  }
-  &:before {
-    content: '';
-    left: -2px;
-    position: absolute;
-    top: 0;
-    width: 2px;
-    background-color: white;
-    height: 36px;
-  }
+.form-group.form-textarea label:after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  background-color: white;
+  right: -2px;
+  top: 0;
+  bottom: 0;
+}
+
+textarea.form-control {
+  height: auto;
+  resize: none;
+  padding: 1rem 0;
+  border-bottom: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  padding: .5rem;
 }
 
 select.form-control {

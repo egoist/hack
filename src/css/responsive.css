@@ -7,13 +7,12 @@
     }
   }
 
-  .textarea {
+  .form-group.form-textarea label:after {
+    display: none;
+  }
+
+  textarea.form-control {
     border-left: none;
-    &:before {
-      display: none;
-    }
-    & textarea.form-control {
-      padding: 1rem 0;
-    }
+    padding: .5rem 0;
   }
 }
