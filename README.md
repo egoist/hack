@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/hack.svg?style=flat-square)](https://npmjs.com/package/hack) [![npm downloads](https://img.shields.io/npm/dm/hack.svg?style=flat-square)](https://npmjs.com/package/hack) [![Gitter](https://img.shields.io/gitter/room/egoist/hack.svg?style=flat-square)](https://gitter.im/egoist/hack)
 
-CSS framework for hackers. 
+Dead simple CSS framework. 
 
 ## Install
 

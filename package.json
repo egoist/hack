@@ -1,7 +1,7 @@
 {
   "name": "hack",
   "version": "0.2.0",
-  "description": "Hack.css makes web cool again.",
+  "description": "Dead simple CSS framework.",
   "main": "dist/hack.css",
   "scripts": {
     "test": "echo lol",
