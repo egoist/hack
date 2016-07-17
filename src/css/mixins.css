@@ -1,0 +1,14 @@
+@define-mixin form-label $color {
+  color: $color;
+  border-color: $color;
+}
+
+@define-mixin button $color {
+  color: white;
+  background-color: $color;
+}
+
+@define-mixin alert $color {
+  color: $color;
+  border-color: $color;
+}

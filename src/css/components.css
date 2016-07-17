@@ -83,20 +83,18 @@ table {
   }
 
   &.form-success label {
-    color: #83d017;
-    border-color: #83d017;
+    @mixin form-label $green;
   }
 
   &.form-warning label {
-    color: orange;
-    border-color: orange;
+    @mixin form-label $orange;
   }
 
   &.form-error label {
-    color: red;
-    border-color: red;
+    @mixin form-label $red;
   }
 }
+
 .form-control {
   outline: none;
   border: none;
@@ -140,35 +138,33 @@ select.form-control {
   height: 33px;
   line-height: 33px;
   font-size: 1rem;
+  &:active {
+    box-shadow: inset 0 1px 6px rgba(0,0,0,.27);
+  }
 }
 
 .btn-success {
-  color: white;
-  background-color: $green;
+  @mixin button $green;
 }
 
 .btn-error {
-  color: white;
-  background-color: $red;
+  @mixin button $red;
 }
 
 .btn-warning {
-  color: white;
-  background-color: $orange;
+  @mixin button $orange;
 }
 
 .btn-info {
-  color: white;
-  background-color: $cyan;
+  @mixin button $cyan;
 }
 
 .btn-primary {
-  color: white;
-  background-color: $blue;
+  @mixin button $blue;
 }
+
 .btn-dark {
-  color: white;
-  background-color: black;
+  @mixin button #000;
 }
 
 /**
@@ -192,11 +188,6 @@ select.form-control {
   padding: 1rem;
   border: 1px solid #ccc;
   margin-bottom: 1.75rem;
-}
-
-@define-mixin alert $color {
-  color: $color;
-  border-color: $color;
 }
 
 .alert-success {

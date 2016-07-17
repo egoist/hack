@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/egoist/hack#readme",
   "devDependencies": {
+    "color-preset": "^0.1.1",
     "cssnano": "^3.7.3",
     "gulp": "^3.9.1",
     "gulp-jade": "^1.1.0",
