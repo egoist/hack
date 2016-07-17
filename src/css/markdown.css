@@ -13,7 +13,6 @@
 .hack h4,
 .hack h5,
 .hack h6,
-.hack pre,
 .hack code,
 .hack blockquote,
 .hack em,
@@ -30,7 +29,6 @@
 .hack h4,
 .hack h5,
 .hack h6,
-.hack pre,
 .hack code,
 .hack blockquote,
 .hack ol,
@@ -48,7 +46,6 @@
 .hack p,
 .hack ul,
 .hack ol,
-.hack pre,
 .hack blockquote {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -122,14 +119,6 @@
   content: counter(ol) ".";
   counter-increment: ol;
 }
-.hack pre {
-  padding: 2rem;
-  background-color: white;
-  border: 1px solid #ccc;
-}
-.hack pre code {
-  font-weight: 100;
-}
 .hack blockquote {
   position: relative;
   padding-left: 17px;
@@ -149,15 +138,12 @@
   content: "*";
   display: inline;
 }
-.hack a {
-  cursor: pointer;
-  color: #FF2E88;
-  text-decoration: none;
-  border-bottom: 1px solid #FF2E88;
+.hack pre code {
+  font-weight: 100;
 }
-.hack a:hover {
-  background-color: #FF2E88;
-  color: white;
+.hack pre code:before,
+.hack pre code:after {
+  content: '';
 }
 .hack code {
   font-weight: 700;
@@ -167,10 +153,7 @@
   content: "`";
   display: inline;
 }
-.hack pre code:before,
-.hack pre code:after {
-  content: none;
-}
+
 .hack hr {
   position: relative;
   height: 20px;

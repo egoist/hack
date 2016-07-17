@@ -6,13 +6,37 @@ html {
   box-sizing: border-box;
 }
 
-.hack {
+body {
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 0;
+  font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
 }
 
 fieldset {
   border: none;
   padding: 0;
+}
+
+pre {
+  padding: 2rem;
+  margin: 1.75rem 0;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+pre code {
+  font-weight: 100;
+}
+
+a {
+  cursor: pointer;
+  color: #FF2E88;
+  text-decoration: none;
+  border-bottom: 1px solid #FF2E88;
+}
+
+a:hover {
+  background-color: #FF2E88;
+  color: white;
 }

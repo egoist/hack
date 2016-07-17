@@ -1,8 +1,8 @@
-.hack p {
+p {
   margin: 0 0 1.75rem;
 }
 
-.hack .container {
+.container {
   max-width: 70rem;
   margin: auto;
 }

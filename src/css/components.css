@@ -18,7 +18,7 @@
   transition: width .3s ease;
   position: relative;
   width: 0%;
-  
+
   &:before {
     content: '';
     border: 6px solid transparent;
@@ -44,26 +44,24 @@
  * Table
  */
 
-.hack {
-  & table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.75rem 0;
-    color: #778087;
-    & td,
-    & th {
-      vertical-align: top;
-      border: 1px solid #ccc;
-      line-height: 15px;
-      padding: 10px;
-    }
-    & thead th {
-      font-size: 10px;
-    }
-    & tbody td:first-child {
-      font-weight: 700;
-      color: #333;
-    }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  color: #778087;
+  & td,
+  & th {
+    vertical-align: top;
+    border: 1px solid #ccc;
+    line-height: 15px;
+    padding: 10px;
+  }
+  & thead th {
+    font-size: 10px;
+  }
+  & tbody td:first-child {
+    font-weight: 700;
+    color: #333;
   }
 }
 
@@ -173,7 +171,7 @@ select.form-control {
   background-color: black;
 }
 
-/** 
+/**
  * Card
  */
 .card {
@@ -250,7 +248,7 @@ select.form-control {
   margin-top: .3rem;
 }
 
-/** 
+/**
  * Holders
  */
 .placeholder,
