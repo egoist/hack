@@ -1,6 +1,6 @@
 {
   "name": "hack",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Hack.css makes web cool again.",
   "main": "dist/hack.css",
   "scripts": {
