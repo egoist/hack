@@ -16,7 +16,7 @@ Option #1: Use any pre-processor
 import 'hack'
 ```
 
-Option #2: hot-link the css file:
+Option #2: hot-link the css file ([npmcdn](http://npmcdn.com/hack)):
 
 ```html
 <link rel="stylesheet" href="/path/to/hack.css">
