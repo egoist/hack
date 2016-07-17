@@ -11,6 +11,10 @@
     display: none;
   }
 
+  .form-control {
+    width: 100%;
+  }
+
   textarea.form-control {
     border-left: none;
     padding: .5rem 0;
