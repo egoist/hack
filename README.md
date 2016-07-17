@@ -30,6 +30,14 @@ Option #2: hot-link the css file ([npmcdn](http://npmcdn.com/hack)):
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉
 
+## Development
+
+```bash
+$ npm run dev
+
+$ npm run build
+```
+
 ## License
 
 MIT &copy; [EGOIST](https://github.com/egoist)
