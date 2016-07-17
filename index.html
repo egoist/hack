@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>hack.css</title>
     <link rel="stylesheet" href="./prism.css">
-    <link rel="stylesheet" href="./hack.css?t=1468724214789">
-    <link rel="stylesheet" href="./site.css?t=1468724214789">
+    <link rel="stylesheet" href="./hack.css?t=1468736906131">
+    <link rel="stylesheet" href="./site.css?t=1468736906131">
   </head>
   <body class="hack">
     <div class="main container">
@@ -49,40 +49,40 @@ new Vue({
       <p>User <strong>flexbox</strong> to make layouts,  hack.css uses <a href="https://github.com/1000ch/grd" target="_blank">grd.css</a> to provide a flexbox based grid system.</p>
       <h4><code>.grid</code> modifiers</h4>
       <ul>
-        <li>To align items with <code>align-items</code>
+        <li>To align items with <strong>align-items</strong>
           <ul>
-            <li><code>-top</code>: To top</li>
-            <li><code>-middle</code>: To middle</li>
-            <li><code>-bottom</code>: To bottom</li>
-            <li><code>-stretch</code>: Stretch items</li>
-            <li><code>-baseline</code>: To baseline</li>
+            <li><strong>-top</strong>: To top</li>
+            <li><strong>-middle</strong>: To middle</li>
+            <li><strong>-bottom</strong>: To bottom</li>
+            <li><strong>-stretch</strong>: Stretch items</li>
+            <li><strong>-baseline</strong>: To baseline</li>
           </ul>
         </li>
-        <li>To layout contents with <code>justify-content</code>
+        <li>To layout contents with <strong>justify-content</strong>
           <ul>
-            <li><code>-left</code>: To left</li>
-            <li><code>-center</code>: To center</li>
-            <li><code>-right</code>: To right</li>
-            <li><code>-between</code>: Add spaces between items</li>
-            <li><code>-around</code>: Add spaces around items</li>
+            <li><strong>-left</strong>: To left</li>
+            <li><strong>-center</strong>: To center</li>
+            <li><strong>-right</strong>: To right</li>
+            <li><strong>-between</strong>: Add spaces between items</li>
+            <li><strong>-around</strong>: Add spaces around items</li>
           </ul>
         </li>
       </ul>
       <h4><code>.cell</code> modifiers</h4>
       <ul>
-        <li><code>-fill</code>: Set item width to left width of parent</li>
-        <li><code>-1of12</code>: Set item width to 8.3% of parent</li>
-        <li><code>-2of12</code>: Set item width to 16.7% of parent</li>
-        <li><code>-3of12</code>: Set item width to 25% of parent</li>
-        <li><code>-4of12</code>: Set item width to 33% of parent</li>
-        <li><code>-5of12</code>: Set item width to 41.7% of parent</li>
-        <li><code>-6of12</code>: Set item width to 50% of parent</li>
-        <li><code>-7of12</code>: Set item width to 58.3% of parent</li>
-        <li><code>-8of12</code>: Set item width to 66.7% of parent</li>
-        <li><code>-9of12</code>: Set item width to 75% of parent</li>
-        <li><code>-10of12</code>: Set item width to 83.3% of parent</li>
-        <li><code>-11of12</code>: Set item width to 91.7% of parent</li>
-        <li><code>-12of12</code>: Set item width to 100% of parent</li>
+        <li><strong>-fill</strong>: Set item width to left width of parent</li>
+        <li><strong>-1of12</strong>: Set item width to 8.3% of parent</li>
+        <li><strong>-2of12</strong>: Set item width to 16.7% of parent</li>
+        <li><strong>-3of12</strong>: Set item width to 25% of parent</li>
+        <li><strong>-4of12</strong>: Set item width to 33% of parent</li>
+        <li><strong>-5of12</strong>: Set item width to 41.7% of parent</li>
+        <li><strong>-6of12</strong>: Set item width to 50% of parent</li>
+        <li><strong>-7of12</strong>: Set item width to 58.3% of parent</li>
+        <li><strong>-8of12</strong>: Set item width to 66.7% of parent</li>
+        <li><strong>-9of12</strong>: Set item width to 75% of parent</li>
+        <li><strong>-10of12</strong>: Set item width to 83.3% of parent</li>
+        <li><strong>-11of12</strong>: Set item width to 91.7% of parent</li>
+        <li><strong>-12of12</strong>: Set item width to 100% of parent</li>
       </ul>
       <h3>Components</h3>
       <h4>Form</h4>
@@ -142,20 +142,34 @@ new Vue({
       <h5>Stateful Form</h5>
       <form>
         <fieldset class="form-group form-success">
-          <label for="username">USERNAME:</label>
-          <input id="username" type="text" placeholder="type your name..." class="form-control">
-        </fieldset>
-        <fieldset class="form-group form-error">
-          <label for="email">EMAIL:</label>
-          <input id="email" type="email" placeholder="" class="form-control">
+          <label for="username2">USERNAME:</label>
+          <input id="username2" type="text" placeholder="type your name..." class="form-control">
         </fieldset>
         <fieldset class="form-group form-warning">
-          <label for="password">PASSWORD:</label>
-          <input id="password" type="password" placeholder="" class="form-control">
+          <label for="password2">PASSWORD:</label>
+          <input id="password2" type="password" placeholder="" class="form-control">
         </fieldset>
       </form><pre><code class="lang-html">.form-group.form-success
 .form-group.form-error
 .form-group.form-warning
+</code></pre>
+
+      <h5>Help Block</h5>
+      <form>
+        <fieldset class="form-group form-success">
+          <label for="phone">Phone Number:</label>
+          <input id="phone" type="text" value="+86 180 800 8000" placeholder="" class="form-control">
+          <div class="help-block">In this format: +86 xxx xxx xxxxx</div>
+        </fieldset>
+        <fieldset class="form-group form-error">
+          <label for="email3">EMAIL:</label>
+          <input id="email3" type="email" placeholder="" class="form-control">
+        </fieldset>
+      </form><pre><code class="lang-html">&lt;fieldset class=&quot;form-group form-success&quot;&gt;
+  &lt;label for=&quot;phone&quot;&gt;Phone Number:&lt;/label&gt;
+  &lt;input id=&quot;phone&quot; type=&quot;text&quot; placeholder=&quot;&quot; class=&quot;form-control&quot;&gt;
+  &lt;div class=&quot;help-block&quot;&gt;In this format: +86 xxx xxx xxxxx&lt;/div&gt;
+&lt;/fieldset&gt;
 </code></pre>
 
       <h4>Table</h4><table>
@@ -191,15 +205,115 @@ new Vue({
 
       <h4>Progress bar</h4>
       <div class="progress-bar progress-bar-show-percent">
-        <div style="width:40%;" data-filled="40%" class="progress-bar-filled"></div>
+        <div style="width:40%;" data-filled="Loading 40%" class="progress-bar-filled"></div>
       </div><pre><code class="lang-html">&lt;!-- with only an arrow --&gt;
 &lt;div class=&quot;progress-bar&quot;&gt;
   &lt;div class=&quot;progress-bar-filled&quot; style=&quot;width: 40%&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;!-- with a percent number --&gt;
-&lt;div class=&quot;progress-bar progress-bar-show-percent&quot; data-filled=&quot;40%&quot;&gt;
+&lt;!-- with a percentage showing above the arrow --&gt;
+&lt;div class=&quot;progress-bar progress-bar-show-percent&quot; data-filled=&quot;Loading 40%&quot;&gt;
   &lt;div class=&quot;progress-bar-filled&quot; style=&quot;width: 40%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h4>Buttons</h4>
+      <div class="example">
+        <button class="btn">Default</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-error">Error</button>
+        <button class="btn btn-dark">Dark</button>
+      </div>
+      <h4>Card</h4>
+      <div class="grid -between">
+        <div style="width: 32%;" class="cell">
+          <div class="card">
+            <header class="card-header">title</header>
+            <div class="card-content">
+              <div class="inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.</div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 32%;" class="cell">
+          <div class="card">
+            <header class="card-header">title</header>
+            <div class="card-content">
+              <div class="inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.</div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 32%;" class="cell">
+          <div class="card">
+            <header class="card-header">title</header>
+            <div class="card-content">
+              <div class="inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.</div>
+            </div>
+          </div>
+        </div>
+      </div><pre><code class="lang-html">&lt;div class=&quot;card&quot;&gt;
+  &lt;header class=&quot;card-header&quot;&gt;title&lt;/header&gt;
+  &lt;div class=&quot;card-content&quot;&gt;
+    &lt;div class=&quot;inner&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <h4>Alerts</h4>
+      <div class="example">
+        <div class="alert alert-success">Success message</div>
+        <div class="alert alert-info">Info message</div>
+        <div class="alert alert-warning">Warning message</div>
+        <div class="alert alert-error">Error message</div>
+      </div><pre><code class="lang-html">&lt;div class=&quot;alert alert-success&quot;&gt;Success message&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;Info message&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot;&gt;Warning message&lt;/div&gt;
+&lt;div class=&quot;alert alert-error&quot;&gt;Error message&lt;/div&gt;
+</code></pre>
+
+      <h4>Media</h4>
+      <p>This is useful if you wanna display a list of items, like the Twitter timeline.</p>
+      <div class="example">
+        <div class="media">
+          <div class="media-left">
+            <div class="avatarholder">e</div>
+          </div>
+          <div class="media-body">
+            <div class="media-heading">EGOIST @egoist</div>
+            <div class="media-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vel, voluptates, doloremque nesciunt illum est corrupti nostrum expedita adipisci dicta vitae? Eveniet maxime quibusdam modi molestias alias et incidunt est.</div>
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <div class="media-heading">EGOIST @egoist</div>
+          <div class="media-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vel, voluptates, doloremque nesciunt illum est corrupti nostrum expedita adipisci dicta vitae? Eveniet maxime quibusdam modi molestias alias et incidunt est.</div>
+        </div>
+        <div class="media-right">
+          <div class="avatarholder">e</div>
+        </div>
+      </div><pre><code class="lang-html">&lt;!-- left align --&gt;
+&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-left&quot;&gt;
+    &lt;div class=&quot;avatarholder&quot;&gt;e&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;div class=&quot;media-heading&quot;&gt;EGOIST @egoist&lt;/div&gt;
+    &lt;div class=&quot;media-content&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vel, voluptates, doloremque nesciunt illum est corrupti nostrum expedita adipisci dicta vitae? Eveniet maxime quibusdam modi molestias alias et incidunt est.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- right align --&gt;
+&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;div class=&quot;media-heading&quot;&gt;EGOIST @egoist&lt;/div&gt;
+    &lt;div class=&quot;media-content&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vel, voluptates, doloremque nesciunt illum est corrupti nostrum expedita adipisci dicta vitae? Eveniet maxime quibusdam modi molestias alias et incidunt est.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;media-right&quot;&gt;
+    &lt;div class=&quot;avatarholder&quot;&gt;e&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 
