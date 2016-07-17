@@ -3,6 +3,7 @@ const gulp = require('gulp')
 const postcss = require('gulp-postcss')
 const jade = require('gulp-jade')
 const serve = require('gulp-serve')
+const pkg = require('./package')
 
 const paths = {
   css: {
@@ -43,11 +44,14 @@ gulp.task('css', () => {
 })
 
 gulp.task('html', () => {
+  const d = new Date()
   gulp.src(paths.html.entry)
     .pipe(jade({
       pretty: true,
       locals: {
-        time: Date.now()
+        time: Date.now(),
+        version: pkg.version,
+        build: Math.floor(Date.now() / 1000)
       }
     }))
     .pipe(gulp.dest('./demo'))
