@@ -132,7 +132,7 @@ select.form-control {
   cursor: pointer;
   outline: none;
   border: none;
-  background-color: #f0f0f0;
+  background-color: $grey-300;
   color: #333;
   padding: 0 2rem;
   height: 33px;
@@ -141,30 +141,51 @@ select.form-control {
   &:active {
     box-shadow: inset 0 1px 6px rgba(0,0,0,.27);
   }
+  &:hover {
+    background-color: #d2d2d2;
+  }
 }
 
 .btn-success {
   @mixin button $green;
+  &:hover {
+    background-color: $green-600;
+  }
 }
 
 .btn-error {
   @mixin button $red;
+  &:hover {
+    background-color: $red-600;
+  }
 }
 
 .btn-warning {
   @mixin button $orange;
+  &:hover {
+    background-color: $orange-600;
+  }
 }
 
 .btn-info {
   @mixin button $cyan;
+  &:hover {
+    background-color: $cyan-600;
+  }
 }
 
 .btn-primary {
   @mixin button $blue;
+  &:hover {
+    background-color: $blue-600;
+  }
 }
 
 .btn-dark {
-  @mixin button #000;
+  @mixin button black;
+  &:hover {
+    background-color: black;
+  }
 }
 
 /**
