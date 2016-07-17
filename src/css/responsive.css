@@ -6,4 +6,14 @@
       width: 100%;
     }
   }
+
+  .textarea {
+    border-left: none;
+    &:before {
+      display: none;
+    }
+    & textarea.form-control {
+      padding: 1rem 0;
+    }
+  }
 }

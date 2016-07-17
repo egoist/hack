@@ -80,6 +80,7 @@ table {
     line-height: 38px;
     padding: 0;
     float: left;
+    position: relative;
   }
 
   &.form-success label {
@@ -104,6 +105,29 @@ table {
   height: 38px;
   &:focus {
     border-bottom-color: #555;
+  }
+}
+
+.textarea {
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-top: none;
+  border-right: none;
+  position: relative;
+  & textarea.form-control {
+    height: auto;
+    resize: none;
+    padding: 1rem;
+    border-bottom: none;
+  }
+  &:before {
+    content: '';
+    left: -2px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+    background-color: white;
+    height: 36px;
   }
 }
 
