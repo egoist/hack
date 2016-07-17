@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+  .form-group {
+    & label {
+      display: block;
+      border-bottom: none;
+      width: 100%;
+    }
+  }
+}

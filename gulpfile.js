@@ -20,7 +20,7 @@ const paths = {
 }
 
 gulp.task('serve', serve({
-  host: 'localhost',
+  host: '127.0.0.1',
   port: 4001,
   root: './demo'
 }))
@@ -43,7 +43,10 @@ gulp.task('css', () => {
 gulp.task('html', () => {
   gulp.src(paths.html.entry)
     .pipe(jade({
-      pretty: true
+      pretty: true,
+      locals: {
+        time: Date.now()
+      }
     }))
     .pipe(gulp.dest('./demo'))
 })
