@@ -20,3 +20,9 @@
     padding: .5rem 0;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .form {
+    width: 100%;
+  }
+}
