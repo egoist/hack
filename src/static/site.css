@@ -22,3 +22,20 @@ footer.footer {
   margin-top: 5rem;
   padding: 3rem 0;
 }
+
+.grid-example {
+  padding: 0 2px;
+  background-color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.grid-example .cell {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 4px 2px;
+  color: #999;
+}
+
+.grid-example .cell .content {
+  background-color: #ddd;
+}
