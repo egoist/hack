@@ -53,7 +53,25 @@ html
 
       p Use <code>.container</code> to centralize the main content.
 
-      p Use <strong>flexbox</strong> to make layouts,  hack.css uses <a href="https://github.com/1000ch/grd" target="_blank">grd.css</a> to provide a flexbox based grid system.
+      p Use <strong>flexbox</strong> to make layouts.
+
+      .example
+        .grid.grid-example
+          .cell.-4of12
+            .content 4
+          .cell.-4of12
+            .content 4
+          .cell.-4of12
+            .content 4
+        .grid.grid-example
+          .cell.-4of12
+            .content 4
+          .cell.-8of12
+            .content 8
+        .grid.grid-example
+          each i in new Array(12)
+            .cell
+              .content 1
 
       h4 <code>.grid</code> modifiers
       ul
@@ -96,9 +114,6 @@ html
 
       h4 <code>.cell</code> modifiers
       ul
-        li
-          strong -fill
-          | : Set item width to left width of parent
         li
           strong -1of12
           | : Set item width to 8.3% of parent
