@@ -27,6 +27,10 @@ Option #2: hot-link the css file ([npmcdn](http://npmcdn.com/hack)):
 <!-- standard mode -->
 <link rel="stylesheet" href="/path/to/standard.css">
 <body class="standard"></body>
+
+<!-- dark mode -->
+<link rel="stylesheet" href="/path/to/dark.css">
+<body class="hack dark"></body>
 ```
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉
@@ -35,8 +39,9 @@ For more usages and style guideline head to [hackcss.com](http://hackcss.com/) �
 
 ```bash
 dist
-├── [8.5K]  hack.css
-└── [ 457]  standard.css
+├── [ 640]  dark.css
+├── [8.7K]  hack.css
+└── [ 457]  standard.cs
 ```
 
 ## Development

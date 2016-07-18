@@ -107,6 +107,7 @@ table {
   padding: .5rem 0;
   width: 20rem;
   height: 38px;
+  background-color: transparent;
   &:focus {
     border-color: #555;
   }
@@ -133,7 +134,7 @@ textarea.form-control {
 
 select.form-control {
   border-radius: 0;
-  background-color: white;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;

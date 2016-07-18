@@ -10,11 +10,8 @@
   margin-bottom: 20px;
 }
 
-:not(pre) > code[class*="language-"], pre[class*="language-"] {
-  padding: 2rem;
-  margin: 1.75rem 0;
-  background-color: white;
-  border: 1px solid #ccc;
+.example .btn {
+  margin-bottom: 10px;
 }
 
 footer.footer {

@@ -18,10 +18,10 @@
 .hack em,
 .hack strong,
 .hack code {
+  font-size: 1rem;
   line-height: 20px;
   font-style: normal;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  color: #333333;
 }
 .hack h1,
 .hack h2,
@@ -137,9 +137,6 @@
 .hack em:after {
   content: "*";
   display: inline;
-}
-.hack pre code {
-  font-weight: 100;
 }
 .hack pre code:before,
 .hack pre code:after {

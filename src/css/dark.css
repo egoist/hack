@@ -1,0 +1,90 @@
+@import "color-preset";
+@import "./vars.css";
+
+.dark {
+  background-color: black;
+  color: #ccc;
+
+  & pre {
+    background-color: black;
+    padding: 0;
+    border: none;
+    & code {
+      color: $cyan;
+    }
+  }
+
+  & h1 a,
+  & h2 a,
+  & h3 a,
+  & h4 a,
+  & h5 a {
+    color: #ccc;
+  }
+
+  & strong,
+  & code {
+    color: white;
+  }
+
+  & code {
+    font-weight: 100;
+  }
+
+  /**
+   * table
+   */
+  & table {
+    color: #ccc;
+  }
+  & table td,
+  & table th {
+    border-color: #444;
+  }
+
+  & table tbody td:first-child {
+    color: white;
+  }
+
+  /**
+   * Form
+   */
+  & .form-group {
+    & label {
+      color: #ccc;
+      border-color: $light-grey;
+    }
+  }
+
+  & .form-control {
+    color: #ccc;
+    border-color: $light-grey;
+    &:focus {
+      border-color: #ccc;
+      color: #ccc;
+    }
+  }
+
+  & textarea.form-control {
+    color: #ccc;
+  }
+
+  /**
+   * Card
+   */
+  & .card {
+    border-color: $light-grey;
+    & .card-header {
+      background-color: transparent;
+      color: #ccc;
+      border-bottom: 1px solid $light-grey;
+    }
+  }
+
+  /**
+   * Buttons
+   */
+  & .btn-dark {
+    background-color: #333;
+  }
+}
