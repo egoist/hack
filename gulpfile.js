@@ -7,7 +7,7 @@ const pkg = require('./package')
 
 const paths = {
   css: {
-    entry: ['./src/css/hack.css'],
+    entry: ['./src/css/hack.css', './src/css/standard.css'],
     all: './src/css/*.css'
   },
   html: {

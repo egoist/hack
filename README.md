@@ -21,11 +21,12 @@ Option #2: hot-link the css file ([npmcdn](http://npmcdn.com/hack)):
 ```html
 <link rel="stylesheet" href="/path/to/hack.css">
 
-<!-- add .hack to body if you want markdown style elments -->
-<!-- however it makes no sense if you use hack.css without markdown stylings -->
-<body class="hack">
-  ...
-</body>
+<!-- markdown mode -->
+<body class="hack"></body>
+
+<!-- standard mode -->
+<link rel="stylesheet" href="/path/to/standard.css">
+<body class="standard"></body>
 ```
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉

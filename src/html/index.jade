@@ -39,12 +39,15 @@ html
 
       :marked
         ```html
-        <head>
-          <link href="/path/to/hack.css" ref="stylesheet" />
-        </head>
-        <body class="hack">
-          ...
-        </body>
+        <!-- required in all modes -->
+        <link rel="stylesheet" href="/path/to/hack.css">
+
+        <!-- markdown mode -->
+        <body class="hack"></body>
+
+        <!-- standard mode -->
+        <link rel="stylesheet" href="/path/to/standard.css">
+        <body class="standard"></body>
         ```
 
       h2 User guide
