@@ -308,14 +308,12 @@ html
 
       h4 Card
 
-      .grid.-between
-        - var loop = [1,2,3]
-        each i in loop
-          .cell(style="width: 32%;")
-            .card
-              header.card-header title
-              .card-body
-                .inner Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.
+      .grid
+        .cell.-4of12
+          .card
+            header.card-header title
+            .card-body
+              .inner Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.
 
       :marked
         ```html
