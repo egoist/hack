@@ -156,12 +156,12 @@ select.form-control {
 .btn {
   cursor: pointer;
   outline: none;
-  padding: 0 2rem;
-  line-height: 33px;
+  padding: .65rem 2rem;
   font-size: 1rem;
   user-select: none;
+  position: relative;
   &:active {
-    box-shadow: inset 0 1px 6px rgba(0,0,0,.27);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
   }
 
   &.btn-ghost {
@@ -347,6 +347,14 @@ select.form-control {
   border: 2px solid $pink;
   border-right-color: transparent;
   border-radius: 50%;
+}
+
+.btn .loading {
+  display: inline-block;
+  float: left;
+  margin-right: .5rem;
+  width: 15px;
+  height: 15px;
 }
 
 @keyframes rotate {
