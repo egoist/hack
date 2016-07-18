@@ -36,3 +36,7 @@ footer.footer {
 .grid-example .cell .content {
   background-color: #ddd;
 }
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  background-color: transparent;
+}
