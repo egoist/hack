@@ -1,5 +1,6 @@
 @import "color-preset";
 @import "./vars.css";
+@import "./mixins.css";
 
 .dark {
   background-color: black;
@@ -87,7 +88,7 @@
   /**
    * Buttons
    */
-  & .btn-dark {
-    background-color: #333;
+  & .btn.btn-ghost.btn-default {
+    @mixin button-ghost #ababab, #9c9c9c;
   }
 }

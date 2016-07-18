@@ -6,9 +6,19 @@
 @define-mixin button $color {
   color: white;
   background-color: $color;
+  border: 1px solid $color;
 }
 
 @define-mixin alert $color {
   color: $color;
   border-color: $color;
+}
+
+@define-mixin button-ghost $color, $hover-color {
+  border-color: $color;
+  color: $color;
+  &:hover {
+    border-color: $hover-color;
+    color: $hover-color;
+  }
 }
