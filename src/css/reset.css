@@ -49,7 +49,7 @@ a:hover {
 
 body::-webkit-scrollbar {
   background-color: transparent;
-  width: 14px;
+  width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -70,13 +70,20 @@ body.dark::-webkit-scrollbar-thumb {
 
 pre::-webkit-scrollbar {
   background-color: transparent;
-  height: 5px;
+  height: 8px;
 }
 
 pre::-webkit-scrollbar-thumb {
   border-radius: 0;
   background-color: #ccc;
   &:hover {
-    background-color: white;
+    background-color: #b1b1b1;
+  }
+}
+
+.dark pre::-webkit-scrollbar-thumb {
+  background-color: rgba(95, 95, 95, 0.78);
+  &:hover {
+    background-color: #525252;
   }
 }
