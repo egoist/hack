@@ -3,6 +3,11 @@
  * with some modifications
  */
 
+@custom-media --sm (min-width: 384px)
+@custom-media --md (min-width: 480px)
+@custom-media --lg (min-width: 480px)
+@custom-media --xl (max-width: 1100px)
+
 .grid            { display: flex; flex-wrap: wrap;}
 .grid.\-top      { align-items: flex-start; }
 .grid.\-middle   { align-items: center; }
@@ -29,3 +34,44 @@
 .cell.\-10of12   { width: calc(100% * 10 / 12); }
 .cell.\-11of12   { width: calc(100% * 11 / 12); }
 .cell.\-12of12   { width: 100%; }
+
+@media (--sm) {
+  .cell.\-1of12,
+  .cell.\-2of12,
+  .cell.\-3of12,
+  .cell.\-4of12,
+  .cell.\-5of12,
+  .cell.\-6of12,
+  .cell.\-7of12,
+  .cell.\-8of12,
+  .cell.\-9of12,
+  .cell.\-10of12
+  .cell.\-11of12,
+  .cell.\-12of12 { width: 100%; }
+}
+
+@media (--md) {
+  .cell.\-4of12,
+  .cell.\-6of12,
+  .cell.\-8of12,
+  .cell.\-10of12,
+  .cell.\-12of12 { width: calc(100% * 6 / 12); }
+
+  .cell.\-1of12,
+  .cell.\-2of12,
+  .cell.\-3of12,
+  .cell.\-5of12,
+  .cell.\-7of12,
+  .cell.\-9of12,
+  .cell.\-11of12 { width: 100%; }
+}
+
+@media (--lg) and (--xl) {
+  .cell.\-2of12,
+  .cell.\-7of12  { width: 100%; }
+
+  .cell.\-4of12,
+  .cell.\-8of12,
+  .cell.\-10of12,
+  .cell.\-12of12 { width: calc(100% * 6 / 12); }
+}
