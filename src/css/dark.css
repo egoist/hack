@@ -1,4 +1,5 @@
 @import "color-preset";
+@import "./vars.css";
 
 .dark {
   background-color: black;
@@ -51,14 +52,16 @@
   & .form-group {
     & label {
       color: #ccc;
+      border-color: $light-grey;
     }
   }
 
   & .form-control {
     color: #ccc;
+    border-color: $light-grey;
     &:focus {
-      border-color: white;
-      color: white;
+      border-color: #ccc;
+      color: #ccc;
     }
   }
 
@@ -70,10 +73,11 @@
    * Card
    */
   & .card {
+    border-color: $light-grey;
     & .card-header {
       background-color: transparent;
       color: #ccc;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid $light-grey;
     }
   }
 

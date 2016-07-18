@@ -10,6 +10,10 @@
   margin-bottom: 20px;
 }
 
+.example .btn {
+  margin-bottom: 10px;
+}
+
 footer.footer {
   border-top: 1px solid #ccc;
   margin-top: 5rem;
