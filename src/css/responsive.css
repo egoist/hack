@@ -19,6 +19,10 @@
     border-left: none;
     padding: .5rem 0;
   }
+
+  pre::-webkit-scrollbar {
+    height: 3px;
+  }
 }
 
 @media screen and (max-width: 480px) {
