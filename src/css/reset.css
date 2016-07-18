@@ -4,6 +4,7 @@ html {
 
 * {
   box-sizing: border-box;
+  text-rendering: geometricPrecision;
 }
 
 body {
@@ -26,8 +27,11 @@ pre {
   border: 1px solid #ccc;
 }
 
-pre code {
+pre code,
+code[class*="language-"], pre[class*="language-"] {
   font-weight: 100;
+  text-shadow: none;
+  margin: 1.75rem 0;
 }
 
 a {

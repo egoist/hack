@@ -1,0 +1,79 @@
+@import "color-preset";
+
+.dark {
+  background-color: black;
+  color: #ccc;
+
+  & pre {
+    background-color: black;
+    padding: 0;
+    border: none;
+    & code {
+      color: $cyan;
+    }
+  }
+
+  & h1 a,
+  & h2 a,
+  & h3 a,
+  & h4 a,
+  & h5 a {
+    color: #ccc;
+  }
+
+  & strong,
+  & code {
+    color: white;
+  }
+
+  & code {
+    font-weight: 100;
+  }
+
+  /**
+   * table
+   */
+  & table {
+    color: #ccc;
+  }
+  & table td,
+  & table th {
+    border-color: #444;
+  }
+
+  & table tbody td:first-child {
+    color: white;
+  }
+
+  /**
+   * Form
+   */
+  & .form-group {
+    & label {
+      color: #ccc;
+    }
+  }
+
+  & .form-control {
+    color: #ccc;
+    &:focus {
+      border-color: white;
+      color: white;
+    }
+  }
+
+  & textarea.form-control {
+    color: #ccc;
+  }
+
+  /**
+   * Card
+   */
+  & .card {
+    & .card-header {
+      background-color: transparent;
+      color: #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
