@@ -1,6 +1,6 @@
 {
   "name": "hack",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Dead simple CSS framework.",
   "main": "dist/hack.css",
   "scripts": {
