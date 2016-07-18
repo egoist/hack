@@ -54,6 +54,9 @@
       color: #ccc;
       border-color: $light-grey;
     }
+    &.form-textarea label:after {
+      background-color: black;
+    }
   }
 
   & .form-control {
