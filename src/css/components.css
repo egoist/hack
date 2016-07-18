@@ -68,13 +68,17 @@ table {
 /**
  * Form
  */
+.form {
+  width: 30rem
+}
+
 .form-group {
   margin-bottom: 1.75rem;
   overflow: auto;
   & label {
     border-bottom: 2px solid #ccc;
     color: #333;
-    min-width: 9rem;
+    width: 10rem;
     display: inline-block;
     height: 38px;
     line-height: 38px;
@@ -101,7 +105,7 @@ table {
   border: none;
   border-bottom: 2px solid #ccc;
   padding: .5rem 0;
-  width: 240px;
+  width: 20rem;
   height: 38px;
   &:focus {
     border-color: #555;
@@ -164,6 +168,11 @@ select.form-control {
   &:hover {
     background-color: #d2d2d2;
   }
+}
+
+.btn-block {
+  width: 100%;
+  display: block;
 }
 
 .btn-success {
