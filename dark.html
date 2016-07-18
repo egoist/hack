@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>dark mode of hack.css</title>
     <link rel="stylesheet" href="./prism.css">
-    <link rel="stylesheet" href="./hack.css?t=1468854274138">
-    <link rel="stylesheet" href="./dark.css?t=1468854274138">
-    <link rel="stylesheet" href="./site.css?t=1468854274138">
-    <link rel="stylesheet" href="./site-dark.css?t=1468854274138">
+    <link rel="stylesheet" href="./hack.css?t=1468859395215">
+    <link rel="stylesheet" href="./dark.css?t=1468859395215">
+    <link rel="stylesheet" href="./site.css?t=1468859395215">
+    <link rel="stylesheet" href="./site-dark.css?t=1468859395215">
   </head>
   <body class="hack dark">
     <div class="main container">
@@ -24,6 +24,8 @@
 </code></pre>
 
       <h2>Components</h2>
+      <h4>Blockquote</h4>
+      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quis cumque similique voluptas facilis fugit inventore odit, quidem et ab, quos, blanditiis iure! Ipsum nostrum corrupti architecto fugit, culpa expedita.</blockquote>
       <h4>Form</h4>
       <form class="form">
         <fieldset class="form-group">
@@ -166,20 +168,28 @@
 
       <h4>Buttons</h4>
       <div class="example">
-        <button class="btn">Default</button>
+        <button class="btn btn-default">Default</button>
         <button class="btn btn-primary">Primary</button>
         <button class="btn btn-success">Success</button>
         <button class="btn btn-info">Info</button>
         <button class="btn btn-warning">Warning</button>
         <button class="btn btn-error">Error</button>
-        <button class="btn btn-dark">Dark</button>
-      </div><pre><code class="lang-html">&lt;button class=&quot;btn&quot;&gt;Default&lt;/button&gt;
+      </div>
+      <div class="example">
+        <button class="btn btn-default btn-ghost">Default Ghost</button>
+        <button class="btn btn-primary btn-ghost">Primary Ghost</button>
+        <button class="btn btn-success btn-ghost">Success Ghost</button>
+        <button class="btn btn-info btn-ghost">Info Ghost</button>
+        <button class="btn btn-warning btn-ghost">Warning Ghost</button>
+        <button class="btn btn-error btn-ghost">Error Ghost</button>
+      </div><pre><code class="lang-html">&lt;button class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
 &lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
 &lt;button class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
 &lt;button class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
 &lt;button class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
 &lt;button class=&quot;btn btn-error&quot;&gt;Error&lt;/button&gt;
-&lt;button class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary btn-ghost&quot;&gt;Ghost Button&lt;/button&gt;
 </code></pre>
 
       <h4>Card</h4>
@@ -260,7 +270,16 @@
       <p>hack.css gives you a default loading element, but you can find more at <a href="https://www.pexels.com/blog/css-only-loaders/">CSS-only loaders</a>.</p>
       <div class="example">
         <div class="loading"></div>
+      </div>
+      <div class="example">
+        <button class="btn btn-info btn-ghost">
+          <div class="loading"></div>Loading...
+        </button>
       </div><pre><code class="lang-html">&lt;div class=&quot;loading&quot;&gt;&lt;/div&gt;
+
+&lt;button class=&quot;btn btn-primary btn-ghost&quot;&gt;
+  &lt;div class=&quot;loading&quot;&gt;&lt;/div&gt;
+&lt;/button&gt;
 </code></pre>
 
       <script src="./prism.js" async></script>
