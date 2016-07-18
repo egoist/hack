@@ -23,7 +23,7 @@
 .cell.\-10of12   { flex: 0 0 calc(100% * 10 / 12); }
 .cell.\-11of12   { flex: 0 0 calc(100% * 11 / 12); }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .grid {
     flex-direction: column;
   }
