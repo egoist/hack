@@ -76,4 +76,11 @@
       border-bottom: 1px solid #ccc;
     }
   }
+
+  /**
+   * Buttons
+   */
+  & .btn-dark {
+    background-color: #333;
+  }
 }
