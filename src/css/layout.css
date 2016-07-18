@@ -4,7 +4,13 @@ p {
 
 .container {
   max-width: 70rem;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .inner {
