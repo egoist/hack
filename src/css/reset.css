@@ -67,23 +67,3 @@ body.dark::-webkit-scrollbar-thumb {
     background-color: #525252;
   }
 }
-
-pre::-webkit-scrollbar {
-  background-color: transparent;
-  height: 8px;
-}
-
-pre::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background-color: #ccc;
-  &:hover {
-    background-color: #b1b1b1;
-  }
-}
-
-.dark pre::-webkit-scrollbar-thumb {
-  background-color: rgba(95, 95, 95, 0.78);
-  &:hover {
-    background-color: #525252;
-  }
-}

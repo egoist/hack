@@ -92,3 +92,12 @@
     @mixin button-ghost #ababab, #9c9c9c;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .dark pre::-webkit-scrollbar-thumb {
+    background-color: rgba(95, 95, 95, 0.78);
+    &:hover {
+      background-color: #525252;
+    }
+  }
+}
