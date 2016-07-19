@@ -91,6 +91,27 @@
   & .btn.btn-ghost.btn-default {
     @mixin button-ghost #ababab, #9c9c9c;
   }
+
+  & .btn.btn-ghost{
+    &.btn-default {
+      @mixin button-ghost-dark $grey-300;
+    }
+    &.btn-primary {
+      @mixin button-ghost-dark $blue-300;
+    }
+    &.btn-success {
+      @mixin button-ghost-dark $green-300;
+    }
+    &.btn-info {
+      @mixin button-ghost-dark $cyan-300;
+    }
+    &.btn-error {
+      @mixin button-ghost-dark $red-300;
+    }
+    &.btn-warning {
+      @mixin button-ghost-dark $orange-300;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {

@@ -3,10 +3,14 @@
   border-color: $color;
 }
 
-@define-mixin button $color {
+@define-mixin button $color, $hover-color {
   color: white;
   background-color: $color;
   border: 1px solid $color;
+  &:hover, &:focus:not(.btn-ghost) {
+    background-color: $hover-color;
+    border-color: $hover-color;
+  }
 }
 
 @define-mixin alert $color {
@@ -17,7 +21,15 @@
 @define-mixin button-ghost $color, $hover-color {
   border-color: $color;
   color: $color;
-  &:hover {
+  &:hover, &:focus {
+    border-color: $hover-color;
+    color: $hover-color;
+    z-index: 2;
+  }
+}
+
+@define-mixin button-ghost-dark $hover-color {
+  &:hover, &:focus {
     border-color: $hover-color;
     color: $hover-color;
   }
