@@ -1,6 +1,6 @@
 @define-mixin form-label $color {
-  color: $color;
-  border-color: $color;
+  color: $color !important;
+  border-color: $color !important;
 }
 
 @define-mixin button $color, $hover-color {

@@ -121,6 +121,21 @@
     background-color: transparent;
     border-color: #333;
   }
+
+  /**
+   * Menu
+   */
+  & .menu {
+    & .menu-item {
+      color: #ccc;
+      border-color: $light-grey;
+
+      &:hover, &.active {
+        color: white;
+        border-color: #ccc;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {

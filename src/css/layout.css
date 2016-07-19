@@ -20,3 +20,11 @@ p {
 .inner2x {
   padding: 2rem;
 }
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}

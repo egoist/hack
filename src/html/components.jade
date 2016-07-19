@@ -15,10 +15,6 @@ form.form
     input.form-control#email(type="email" placeholder="")
 
   fieldset.form-group
-    label(for="password") PASSWORD:
-    input.form-control#password(type="password" placeholder="")
-
-  fieldset.form-group
     label(for="country") COUNTRY:
     select.form-control#country
       option China
@@ -43,10 +39,6 @@ form.form
     <fieldset class="form-group">
       <label for="email">EMAIL:</label>
       <input id="email" type="email" placeholder="" class="form-control">
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="password">PASSWORD:</label>
-      <input id="password" type="password" placeholder="" class="form-control">
     </fieldset>
     <fieldset class="form-group">
       <label for="country">COUNTRY:</label>
@@ -75,8 +67,8 @@ form.form
     input.form-control#username2(type="text" placeholder="type your name...")
 
   fieldset.form-group.form-warning
-    label(for="password2") PASSWORD:
-    input.form-control#password2(type="password" placeholder="")
+    label(for="age") AGE:
+    input.form-control#age(type="text" placeholder="")
 
 :marked
   ```html
@@ -214,6 +206,37 @@ h4 Alerts
   <div class="alert alert-info">Info message</div>
   <div class="alert alert-warning">Warning message</div>
   <div class="alert alert-error">Error message</div>
+  ```
+
+h4 Menu
+
+.example
+  .grid
+    .cell.-3of12
+      .menu
+        a.menu-item
+          | item #1
+          .pull-right &#xbb;
+        a.menu-item.active
+          | item #2
+          .pull-right &#xbb;
+        a.menu-item
+          | item #3
+          .pull-right &#xbb;
+
+:marked
+ ```html
+  <div class="menu">
+    <a class="menu-item">
+      item #1 <div class="pull-right">»</div>
+    </a>
+    <a class="menu-item active">
+      item #2 <div class="pull-right">»</div>
+    </a>
+    <a class="menu-item">
+      item #3 <div class="pull-right">»</div>
+    </a>
+  </div>
   ```
 
 h4 Media
