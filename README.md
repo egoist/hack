@@ -39,8 +39,8 @@ For more usages and style guideline head to [hackcss.com](http://hackcss.com/) �
 
 ```bash
 dist
-├── [ 640]  dark.css
-├── [8.7K]  hack.css
+├── [1.9K]  dark.css
+├── [ 11K]  hack.css
 └── [ 457]  standard.cs
 ```
 
