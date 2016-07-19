@@ -318,12 +318,13 @@ select.form-control {
   text-align: center;
   color: #b9b9b9;
   font-size: 1rem;
+  border: 1px solid #f0f0f0;
 }
 
 .avatarholder {
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
+  width: 48px;
+  height: 48px;
+  line-height: 46px;
   font-size: 2rem;
   background-size: cover;
   background-position: center;

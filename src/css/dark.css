@@ -112,6 +112,15 @@
       @mixin button-ghost-dark $orange-300;
     }
   }
+
+  /**
+   * Holders
+   */
+  & .placeholder,
+  & .avatarholder {
+    background-color: transparent;
+    border-color: #333;
+  }
 }
 
 @media screen and (min-width: 768px) {
