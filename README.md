@@ -43,7 +43,7 @@ For more usages and style guideline head to [hackcss.com](http://hackcss.com/) �
 dist
 ├── [1.9K]  dark.css
 ├── [ 11K]  hack.css
-└── [ 457]  standard.cs
+└── [ 457]  standard.css
 ```
 
 ## Development
