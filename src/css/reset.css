@@ -46,24 +46,3 @@ a:hover {
   background-color: #FF2E88;
   color: white;
 }
-
-body::-webkit-scrollbar {
-  background-color: transparent;
-  width: 12px;
-}
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background-color: #ccc;
-  &:hover {
-    background-color: #b1b1b1;
-  }
-}
-
-body.dark::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background-color: rgba(95, 95, 95, 0.78);
-  &:hover {
-    background-color: #525252;
-  }
-}

@@ -35,7 +35,6 @@
     "gulp": "^3.9.1",
     "gulp-jade": "^1.1.0",
     "gulp-postcss": "^6.1.1",
-    "gulp-pug": "^3.0.3",
     "gulp-serve": "^1.4.0",
     "jstransformer-marked": "^1.0.1",
     "postcss-cssnext": "^2.7.0",
