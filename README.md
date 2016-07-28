@@ -18,7 +18,7 @@ Option #1: Use any pre-processor
 import 'hack'
 ```
 
-Option #2: hot-link the css file ([npmcdn](http://npmcdn.com/hack)):
+Option #2: hot-link the css files:
 
 ```html
 <link rel="stylesheet" href="/path/to/hack.css">
@@ -34,6 +34,12 @@ Option #2: hot-link the css file ([npmcdn](http://npmcdn.com/hack)):
 <link rel="stylesheet" href="/path/to/dark.css">
 <body class="hack dark"></body>
 ```
+
+It's also available on NPMCDN:
+
+> https://npmcdn.com/hack/dist/hack.css<br>
+> https://npmcdn.com/hack/dist/standard.css<br>
+> https://npmcdn.com/hack/dist/dark.css
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉
 
