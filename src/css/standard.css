@@ -1,12 +1,3 @@
-.standard h1,
-.standard h2,
-.standard h3,
-.standard h4,
-.standard h5,
-.standard h6 {
-  line-height: 1.3em;
-}
-
 .standard h1 {
   font-size: 2em;
   font-weight: bold;

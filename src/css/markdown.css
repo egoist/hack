@@ -16,10 +16,18 @@
 .hack strong,
 .hack code {
   font-size: 1rem;
-  line-height: 20px;
   font-style: normal;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
+
+.hack code,
+.hack blockquote,
+.hack em,
+.hack strong,
+.hack code {
+  line-height: 20px;
+}
+
 .hack h1,
 .hack h2,
 .hack h3,
@@ -72,17 +80,16 @@
   position: relative;
   margin-bottom: 1.75rem;
 }
-.hack h1,
-.hack h2 {
-  line-height: 30px;
-}
+
 .hack h2:before,
 .hack h3:before,
 .hack h4:before,
 .hack h5:before,
 .hack h6:before {
-  content: "## ";
   display: inline;
+}
+.hack h2:before {
+  content: "## ";
 }
 .hack h3:before {
   content: "### ";
