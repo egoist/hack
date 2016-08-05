@@ -11,19 +11,22 @@
 .grid.\-around   { justify-content: space-around; }
 
 .cell            { flex: 1; box-sizing: border-box; }
-.cell.\-1of12    { flex: 0 0 calc(100% * 1 / 12); }
-.cell.\-2of12    { flex: 0 0 calc(100% * 2 / 12); }
-.cell.\-3of12    { flex: 0 0 calc(100% * 3 / 12); }
-.cell.\-4of12    { flex: 0 0 calc(100% * 4 / 12); }
-.cell.\-5of12    { flex: 0 0 calc(100% * 5 / 12); }
-.cell.\-6of12    { flex: 0 0 calc(100% * 6 / 12); }
-.cell.\-7of12    { flex: 0 0 calc(100% * 7 / 12); }
-.cell.\-8of12    { flex: 0 0 calc(100% * 8 / 12); }
-.cell.\-9of12    { flex: 0 0 calc(100% * 9 / 12); }
-.cell.\-10of12   { flex: 0 0 calc(100% * 10 / 12); }
-.cell.\-11of12   { flex: 0 0 calc(100% * 11 / 12); }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .cell.\-1of12    { flex: 0 0 calc(100% * 1 / 12); }
+  .cell.\-2of12    { flex: 0 0 calc(100% * 2 / 12); }
+  .cell.\-3of12    { flex: 0 0 calc(100% * 3 / 12); }
+  .cell.\-4of12    { flex: 0 0 calc(100% * 4 / 12); }
+  .cell.\-5of12    { flex: 0 0 calc(100% * 5 / 12); }
+  .cell.\-6of12    { flex: 0 0 calc(100% * 6 / 12); }
+  .cell.\-7of12    { flex: 0 0 calc(100% * 7 / 12); }
+  .cell.\-8of12    { flex: 0 0 calc(100% * 8 / 12); }
+  .cell.\-9of12    { flex: 0 0 calc(100% * 9 / 12); }
+  .cell.\-10of12   { flex: 0 0 calc(100% * 10 / 12); }
+  .cell.\-11of12   { flex: 0 0 calc(100% * 11 / 12); }
+}
+
+@media screen and (max-width: 768px) {
   .grid {
     flex-direction: column;
   }
