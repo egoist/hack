@@ -3,11 +3,11 @@
 @import "./mixins.css";
 
 .dark {
-  background-color: black;
+  background-color: #181818;
   color: #ccc;
 
   & pre {
-    background-color: black;
+    background-color: #181818;
     padding: 0;
     border: none;
     & code {
@@ -56,7 +56,7 @@
       border-color: $light-grey;
     }
     &.form-textarea label:after {
-      background-color: black;
+      background-color: #555;
     }
   }
 
