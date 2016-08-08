@@ -33,6 +33,10 @@ Option #2: hot-link the css files:
 <!-- dark mode -->
 <link rel="stylesheet" href="/path/to/dark.css">
 <body class="hack dark"></body>
+
+<!-- dark-grey mode -->
+<link rel="stylesheet" href="/path/to/dark-grey.css">
+<body class="hack dark-grey"></body>
 ```
 
 It's also available on NPMCDN:
