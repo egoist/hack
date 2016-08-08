@@ -56,7 +56,7 @@
       border-color: $light-grey;
     }
     &.form-textarea label:after {
-      background-color: #555;
+      background-color: $light-grey;
     }
   }
 
