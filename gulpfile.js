@@ -10,7 +10,7 @@ const paths = {
     entry: [
       './src/css/hack.css',
       './src/css/standard.css',
-      './src/css/dark.css'
+      './src/css/dark.css',
       './src/css/dark-grey.css'
     ],
     all: './src/css/*.css'
