@@ -2,7 +2,7 @@
 @import "./vars.css";
 @import "./mixins.css";
 
-.dark {
+.dark-grey {
   background-color: #181818;
   color: #ccc;
 
