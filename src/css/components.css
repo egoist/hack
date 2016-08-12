@@ -154,6 +154,7 @@ select.form-control {
  */
 
 .btn {
+  display: inline-block;
   cursor: pointer;
   outline: none;
   padding: .65rem 2rem;
