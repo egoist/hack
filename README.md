@@ -8,8 +8,6 @@ Dead simple CSS framework.
 
 ```bash
 $ npm install --save hack
-# or bower
-$ bower install hackcss
 ```
 
 Option #1: Use any pre-processor
