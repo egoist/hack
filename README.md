@@ -41,18 +41,10 @@ It's also available on NPMCDN:
 
 > https://npmcdn.com/hack/dist/hack.css<br>
 > https://npmcdn.com/hack/dist/standard.css<br>
-> https://npmcdn.com/hack/dist/dark.css
+> https://npmcdn.com/hack/dist/dark.css<br>
+> https://npmcdn.com/hack/dist/dark-grey.css<br>
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉
-
-## Dist
-
-```bash
-dist
-├── [1.9K]  dark.css
-├── [ 11K]  hack.css
-└── [ 457]  standard.css
-```
 
 ## Development
 
