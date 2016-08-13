@@ -1,0 +1,150 @@
+@import "color-preset";
+@import "../vars.css";
+@import "../mixins.css";
+
+.solarized-dark {
+  background-color: $solarized-dark-color-bg;
+  color: $blue-grey-400;
+
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    color: $blue-600;
+    & a {
+      color: $blue-600;
+      border-bottom-color: $blue-600;
+    }
+    & a:hover {
+      background-color: $blue-600;
+      color: $white;
+    }
+  }
+
+  & pre {
+    background-color: $solarized-dark-color-bg;
+    padding: 0;
+    border: none;
+    & code {
+      color: $teal;
+    }
+  }
+
+  & h1 a,
+  & h2 a,
+  & h3 a,
+  & h4 a,
+  & h5 a {
+    color: $blue-grey-400;
+  }
+
+  & strong,
+  & code {
+    color: $blue-grey-300;
+  }
+
+  & code {
+    font-weight: 100;
+  }
+
+  /**
+   * Progress bar
+   */
+   & .progress-bar-filled {
+     background-color: $light-green-800;
+   }
+
+   & .progress-bar-filled:before, & .progress-bar-filled:after {
+     color: $blue-grey-300;
+   }
+
+  /**
+   * table
+   */
+  & table {
+    color: $blue-grey-400;
+  }
+  & table td,
+  & table th {
+    border-color: $blue-grey-300;
+  }
+
+  & table tbody td:first-child {
+    color: $blue-grey-400;
+  }
+
+  /**
+   * Form
+   */
+  & .form-group {
+    & label {
+      color: $blue-grey-400;
+      border-color: $blue-grey-300;
+    }
+    &.form-textarea label:after {
+      background-color: $solarized-dark-color-bg;
+    }
+  }
+
+  & .form-control {
+    color: $blue-grey-400;
+    border-color: $blue-grey-300;
+    &:focus {
+      border-color: $blue-grey-400;
+      color: $blue-grey-400;
+    }
+  }
+
+  & textarea.form-control {
+    color: $blue-grey-400;
+  }
+
+  /**
+   * Card
+   */
+  & .card {
+    border-color: $blue-grey-300;
+    & .card-header {
+      background-color: transparent;
+      color: $blue-grey-400;
+      border-bottom: 1px solid $blue-grey-300;
+    }
+  }
+
+  /**
+   * Buttons
+   */
+  & .btn.btn-ghost.btn-default {
+    @mixin button-ghost $blue-grey, $blue-grey-300;
+  }
+
+  & .btn.btn-ghost {
+    @mixin buttons-ghost-dark $grey-300, $blue-300, $green-300, $cyan-300, $red-300, $orange-300;
+  }
+
+  /**
+   * Holders
+   */
+  & .placeholder,
+  & .avatarholder {
+    background-color: transparent;
+    border-color: $blue-grey-300;
+  }
+
+  /**
+   * Menu
+   */
+  & .menu {
+    & .menu-item {
+      color: $blue-grey-400;
+      border-color: $blue-grey-300;
+
+      &:hover, &.active {
+        color: white;
+        border-color: $blue-grey-400;
+      }
+    }
+  }
+}

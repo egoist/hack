@@ -9,11 +9,9 @@ const paths = {
   css: {
     entry: [
       './src/css/hack.css',
-      './src/css/standard.css',
-      './src/css/dark.css',
-      './src/css/dark-grey.css'
+      './src/css/themes/*.css'
     ],
-    all: './src/css/*.css'
+    all: './src/css/**/*.css'
   },
   html: {
     entry: ['./src/html/*.jade'],
