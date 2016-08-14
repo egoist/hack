@@ -68,11 +68,11 @@
   }
   & table td,
   & table th {
-    border-color: $blue-grey-300;
+    border-color: $blue-grey-200;
   }
 
   & table tbody td:first-child {
-    color: $blue-grey-400;
+    color: $blue-grey-200;
   }
 
   /**
