@@ -92,8 +92,8 @@
     color: $blue-grey-400;
     border-color: $blue-grey-300;
     &:focus {
-      border-color: $blue-grey-400;
-      color: $blue-grey-400;
+      border-color: $blue-grey-100;
+      color: $blue-grey-100;
     }
   }
 
