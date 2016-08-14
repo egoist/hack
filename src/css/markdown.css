@@ -158,8 +158,6 @@
 .hack hr {
   position: relative;
   height: 20px;
-  font-size: 0;
-  line-height: 0;
   overflow: hidden;
   border: 0;
   margin-bottom: 20px;
