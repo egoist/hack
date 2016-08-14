@@ -21,20 +21,24 @@ Option #2: hot-link the css files:
 ```html
 <link rel="stylesheet" href="/path/to/hack.css">
 
-<!-- markdown mode -->
+<!-- markdown theme -->
 <body class="hack"></body>
 
-<!-- standard mode -->
+<!-- standard theme -->
 <link rel="stylesheet" href="/path/to/standard.css">
 <body class="standard"></body>
 
-<!-- dark mode -->
+<!-- dark theme -->
 <link rel="stylesheet" href="/path/to/dark.css">
 <body class="hack dark"></body>
 
-<!-- dark-grey mode -->
+<!-- dark-grey theme -->
 <link rel="stylesheet" href="/path/to/dark-grey.css">
 <body class="hack dark-grey"></body>
+
+<!-- solarized-dark theme -->
+<link rel="stylesheet" href="/path/to/solarized-dark.css">
+<body class="hack solarized-dark"></body>
 ```
 
 It's also available on NPMCDN:
@@ -43,6 +47,7 @@ It's also available on NPMCDN:
 > https://npmcdn.com/hack/dist/standard.css<br>
 > https://npmcdn.com/hack/dist/dark.css<br>
 > https://npmcdn.com/hack/dist/dark-grey.css<br>
+> https://npmcdn.com/hack/dist/solarized-dark.css<br>
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉
 
