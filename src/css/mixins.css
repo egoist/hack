@@ -34,3 +34,24 @@
     color: $hover-color;
   }
 }
+
+@define-mixin buttons-ghost-dark $default, $primary, $success, $info, $error, $warning {
+    &.btn-default {
+      @mixin button-ghost-dark $default;
+    }
+    &.btn-primary {
+      @mixin button-ghost-dark $primary;
+    }
+    &.btn-success {
+      @mixin button-ghost-dark $success
+    }
+    &.btn-info {
+      @mixin button-ghost-dark $info;
+    }
+    &.btn-error {
+      @mixin button-ghost-dark $error;
+    }
+    &.btn-warning {
+      @mixin button-ghost-dark $warning;
+    }
+}
