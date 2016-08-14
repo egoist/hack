@@ -41,7 +41,7 @@ Option #2: hot-link the css files:
 <body class="hack solarized-dark"></body>
 ```
 
-It's also available on NPMCDN:
+It's also available on [CDNJS](https://cdnjs.com/libraries/hack) and NPMCDN:
 
 > https://npmcdn.com/hack/dist/hack.css<br>
 > https://npmcdn.com/hack/dist/standard.css<br>
