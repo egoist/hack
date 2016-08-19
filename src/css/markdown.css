@@ -160,7 +160,7 @@
   height: 20px;
   overflow: hidden;
   border: 0;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .hack hr:after {
   content: "----------------------------------------------------------------------------------------------------";

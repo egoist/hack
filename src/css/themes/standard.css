@@ -24,17 +24,21 @@ html {
 .standard h3 {
   font-size: 1.17em;
   font-weight: bold;
-  margin: 1em 0;
+  margin: 1.75rem 0;
 }
 .standard p {
-  margin: 1em 0;
+  margin: 1.75rem 0;
 }
 .standard ul,
 .standard ol {
   display: block;
   list-style-type: disc;
-  padding-left: 40px;
-  margin: 1em 0;
+  padding-left: 20px;
+  margin: 1.75rem 0;
+  & ul {
+    margin: .75rem 0;
+    list-style-type: square;
+  }
 }
 .standard ol {
   list-style-type: decimal;
@@ -44,18 +48,19 @@ html {
   padding-left: 0;
 }
 .standard blockquote {
-  margin: 1em 0;
+  margin: 1.75rem 0;
   padding-left: 10px;
   border-left: 5px solid #f0f0f0;
 }
 .standard pre {
-  margin: 1em 0;
+  margin: 1.75rem 0;
   white-space: pre;
 }
 
 .standard hr {
+  border: 0;
   height: 1px;
   display: block;
-  background-color: #f0f0f0;
-  margin: 1em 0;
+  background-color: #e2e2e2;
+  margin: 1.75rem 0;
 }
