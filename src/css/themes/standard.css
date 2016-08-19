@@ -52,3 +52,10 @@ html {
   margin: 1em 0;
   white-space: pre;
 }
+
+.standard hr {
+  height: 1px;
+  display: block;
+  background-color: #f0f0f0;
+  margin: 1em 0;
+}
