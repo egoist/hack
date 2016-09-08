@@ -43,11 +43,11 @@ Option #2: hot-link the css files:
 
 It's also available on [CDNJS](https://cdnjs.com/libraries/hack) and NPMCDN:
 
-> https://npmcdn.com/hack/dist/hack.css<br>
-> https://npmcdn.com/hack/dist/standard.css<br>
-> https://npmcdn.com/hack/dist/dark.css<br>
-> https://npmcdn.com/hack/dist/dark-grey.css<br>
-> https://npmcdn.com/hack/dist/solarized-dark.css<br>
+> https://unpkg.com/hack/dist/hack.css<br>
+> https://unpkg.com/hack/dist/standard.css<br>
+> https://unpkg.com/hack/dist/dark.css<br>
+> https://unpkg.com/hack/dist/dark-grey.css<br>
+> https://unpkg.com/hack/dist/solarized-dark.css<br>
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉
 
