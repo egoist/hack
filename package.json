@@ -4,7 +4,7 @@
   "description": "Dead simple CSS framework.",
   "main": "dist/hack.css",
   "scripts": {
-    "test": "echo lol",
+    "test": "npm run build",
     "build": "gulp build",
     "dev": "gulp",
     "gh": "npm run build && gh-pages -d demo"
