@@ -32,6 +32,7 @@
     content: attr(data-filled);
     display: block;
     font-size: 12px;
+    white-space: nowrap;
     position: absolute;
     border: 6px solid transparent;
     top: -38px;
