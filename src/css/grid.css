@@ -1,4 +1,4 @@
-.grid            { display: flex; }
+.grid            { display: flex; flex-wrap: wrap; }
 .grid.\-top      { align-items: flex-start; }
 .grid.\-middle   { align-items: center; }
 .grid.\-bottom   { align-items: flex-end; }
