@@ -3,6 +3,19 @@
   <a href="https://npmjs.com/package/hack"><img src="https://img.shields.io/npm/v/hack.svg?style=flat-square" alt="npm version"></a> <a href="https://npmjs.com/package/hack"><img src="https://img.shields.io/npm/dm/hack.svg?style=flat-square" alt="npm downloads"></a> <a href="https://gitter.im/egoist/hack"><img src="https://img.shields.io/gitter/room/egoist/hack.svg?style=flat-square" alt="Gitter"></a>
 </p>
 
+<details><summary>Table of Contents</summary>
+
+<!-- toc -->
+
+- [Install](#install)
+- [Related projects](#related-projects)
+- [Development](#development)
+- [License](#license)
+
+<!-- tocstop -->
+
+</details>
+
 ## Install
 
 ```bash
@@ -40,15 +53,14 @@ Option #2: hot-link the css files:
 <body class="hack solarized-dark"></body>
 ```
 
-It's also available on [CDNJS](https://cdnjs.com/libraries/hack) and NPMCDN:
-
-> https://unpkg.com/hack/dist/hack.css<br>
-> https://unpkg.com/hack/dist/standard.css<br>
-> https://unpkg.com/hack/dist/dark.css<br>
-> https://unpkg.com/hack/dist/dark-grey.css<br>
-> https://unpkg.com/hack/dist/solarized-dark.css<br>
+It's also available on [CDNJS](https://cdnjs.com/libraries/hack) and [UNPKG](https://unpkg.com/hack/).
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉
+
+## Related projects
+
+- [Jekyll theme for Hack](https://github.com/wemake-services/jekyll-theme-hackcssmarkdo)
+- [Hugo theme for Hack](https://github.com/comfusion/after-dark)
 
 ## Development
 

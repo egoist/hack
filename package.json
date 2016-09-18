@@ -7,7 +7,8 @@
     "test": "npm run build",
     "build": "gulp build",
     "dev": "gulp",
-    "gh": "npm run build && gh-pages -d demo"
+    "gh": "npm run build && gh-pages -d demo",
+    "toc": "markdown-toc -i README.md"
   },
   "repository": {
     "type": "git",
