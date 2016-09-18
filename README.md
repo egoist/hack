@@ -59,7 +59,7 @@ For more usages and style guideline head to [hackcss.com](http://hackcss.com/) ð
 
 ## Related projects
 
-- [Jekyll theme for Hack](https://github.com/wemake-services/jekyll-theme-hackcssmarkdo)
+- [Jekyll theme for Hack](https://github.com/wemake-services/jekyll-theme-hackcss)
 - [Hugo theme for Hack](https://github.com/comfusion/after-dark)
 
 ## Development
