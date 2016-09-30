@@ -57,6 +57,10 @@ It's also available on [CDNJS](https://cdnjs.com/libraries/hack) and [UNPKG](htt
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉
 
+## Showcase
+
+[A list of projects that use `hack`](https://github.com/egoist/hack/wiki/Showcase).
+
 ## Related projects
 
 - [Jekyll theme for Hack](https://github.com/wemake-services/jekyll-theme-hackcss)
