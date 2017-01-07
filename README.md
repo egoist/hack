@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./media/logo.png" width="60" /><br><br>
+  <img src="https://cloud.githubusercontent.com/assets/11269635/21745895/81f6e9c8-d535-11e6-927b-6a93f75916d7.png" width="60" /><br><br>
   <a href="https://npmjs.com/package/hack"><img src="https://img.shields.io/npm/v/hack.svg?style=flat-square" alt="npm version"></a> <a href="https://npmjs.com/package/hack"><img src="https://img.shields.io/npm/dm/hack.svg?style=flat-square" alt="npm downloads"></a> <a href="https://gitter.im/egoist/hack"><img src="https://img.shields.io/gitter/room/egoist/hack.svg?style=flat-square" alt="Gitter"></a>
 </p>
 
