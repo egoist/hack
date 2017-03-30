@@ -311,16 +311,26 @@ p hack.css gives you a default loading element, but you can find more at <a href
 
 .example
   button.btn.btn-info.btn-ghost
-    .loading
-    | Loading...
+    | Loading&hellip;
+    span.loading
+
+.example
+  .alert.alert-info
+    span.loading
+    | Loading in an alert box&hellip;
 
 :marked
   ```html
   <div class="loading"></div>
 
   <button class="btn btn-info btn-ghost">
-    <div class="loading"></div>
-    Loading...
+    Loading&hellip;
+    <span class="loading"></span>
   </button>
+
+  <div class="alert alert-info">
+    <span class="loading"></span>
+    Loading in an alert box&hellip;
+  </div>
   ```
 
