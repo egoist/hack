@@ -342,8 +342,11 @@ select.form-control {
  * Loading
  */
 .loading {
+  display: inline-block;
+  content: '&nbsp;';
   height: 20px;
   width: 20px;
+  margin: 0 .5rem;
   animation: rotate 0.6s infinite linear;
   border: 2px solid $pink;
   border-right-color: transparent;
@@ -351,11 +354,18 @@ select.form-control {
 }
 
 .btn .loading {
-  display: inline-block;
-  float: left;
-  margin-right: .5rem;
+  margin-bottom: 0;
   width: 14px;
   height: 14px;
+}
+
+/* Remains for backwards compatibility */
+.btn div.loading {
+  float: left;
+}
+
+.alert .loading {
+  margin-bottom: -5px;
 }
 
 @keyframes rotate {
