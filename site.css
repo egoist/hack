@@ -16,13 +16,16 @@
 
 footer.footer {
   border-top: 1px solid #ccc;
+  margin-top: 80px;
   margin-top: 5rem;
+  padding: 48px 0;
   padding: 3rem 0;
 }
 
 .grid-example {
   padding: 0 2px;
   background-color: #ccc;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
 }
 
@@ -40,4 +43,36 @@ footer.footer {
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
   background-color: transparent;
   font-weight: normal;
+}
+
+#carbonads {
+  position: absolute;
+  -webkit-transform: translateX(-160px);
+          transform: translateX(-160px);
+  width: 150px;
+  border: 1px solid #00bcd4;
+  padding: 5px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#carbonads a {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.carbon-img:hover {
+  background-color: transparent;
+}
+
+.carbon-text {
+  text-align: left;
+  margin-top: 10px;
+  display: block;
+}
+
+.carbon-poweredby {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
 }

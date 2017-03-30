@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>dark mode of hack.css</title>
     <link rel="stylesheet" href="./prism.css">
-    <link rel="stylesheet" href="./hack.css?t=1473587248285">
-    <link rel="stylesheet" href="./dark.css?t=1473587248285">
-    <link rel="stylesheet" href="./site.css?t=1473587248285">
-    <link rel="stylesheet" href="./site-dark.css?t=1473587248285">
+    <link rel="stylesheet" href="./hack.css?t=1490883343124">
+    <link rel="stylesheet" href="./dark.css?t=1490883343124">
+    <link rel="stylesheet" href="./site.css?t=1490883343124">
+    <link rel="stylesheet" href="./site-dark.css?t=1490883343124">
   </head>
   <body class="hack dark">
     <div class="main container">
       <p><a href="/">&laquo; Back to home</a></p>
       <h2>Dark mode</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vero maiores quam culpa sed, dolor delectus omnis ab repellat dolorum, atque obcaecati inventore ex ratione hic numquam quia, iste necessitatibus.</p>
+      <script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=hackcsscom" id="_carbonads_js"></script>
       <h2>Usage</h2><pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/hack.css&quot; /&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/dark.css&quot; /&gt;
 &lt;body class=&quot;hack dark&quot;&gt;
@@ -167,8 +168,8 @@
 &lt;/div&gt;
 
 &lt;!-- with a percentage showing above the arrow --&gt;
-&lt;div class=&quot;progress-bar progress-bar-show-percent&quot; data-filled=&quot;Loading 40%&quot;&gt;
-  &lt;div class=&quot;progress-bar-filled&quot; style=&quot;width: 40%&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;progress-bar progress-bar-show-percent&quot;&gt;
+  &lt;div class=&quot;progress-bar-filled&quot; style=&quot;width: 40%&quot; data-filled=&quot;Loading 40%&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 
@@ -320,15 +321,21 @@
         <div class="loading"></div>
       </div>
       <div class="example">
-        <button class="btn btn-info btn-ghost">
-          <div class="loading"></div>Loading...
-        </button>
+        <button class="btn btn-info btn-ghost">Loading&hellip;<span class="loading"></span></button>
+      </div>
+      <div class="example">
+        <div class="alert alert-info"><span class="loading"></span>Loading in an alert box&hellip;</div>
       </div><pre><code class="lang-html">&lt;div class=&quot;loading&quot;&gt;&lt;/div&gt;
 
 &lt;button class=&quot;btn btn-info btn-ghost&quot;&gt;
-  &lt;div class=&quot;loading&quot;&gt;&lt;/div&gt;
-  Loading...
+  Loading&amp;hellip;
+  &lt;span class=&quot;loading&quot;&gt;&lt;/span&gt;
 &lt;/button&gt;
+
+&lt;div class=&quot;alert alert-info&quot;&gt;
+  &lt;span class=&quot;loading&quot;&gt;&lt;/span&gt;
+  Loading in an alert box&amp;hellip;
+&lt;/div&gt;
 </code></pre>
 
       <script src="./prism.js" async></script>
