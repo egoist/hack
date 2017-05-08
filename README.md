@@ -53,7 +53,7 @@ Option #2: hot-link the css files:
 <body class="hack solarized-dark"></body>
 ```
 
-It's also available on [CDNJS](https://cdnjs.com/libraries/hack) and [UNPKG](https://unpkg.com/hack/).
+It's also available on [CDNJS](https://cdnjs.com/libraries/hack), [jsDelivr](http://cdn.jsdelivr.net/npm/hack@0.8.0/dist/) and [UNPKG](https://unpkg.com/hack/).
 
 For more usages and style guideline head to [hackcss.com](http://hackcss.com/) 🎉
 
