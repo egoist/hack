@@ -55,7 +55,7 @@ Option #2: hot-link the css files:
 
 It's also available on [CDNJS](https://cdnjs.com/libraries/hack), [jsDelivr](http://cdn.jsdelivr.net/npm/hack/dist/) and [UNPKG](https://unpkg.com/hack/).
 
-For more usages and style guideline head to [hackcss.com](http://hackcss.egoist.moe/) 🎉
+For more usages and style guideline head to [the website](http://hackcss.egoist.moe/) 🎉
 
 ## Showcase
 
