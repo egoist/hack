@@ -113,9 +113,6 @@
   top: 0;
   left: 0;
 }
-.hack li:nth-child(n+10):after {
-  left: -7px;
-}
 .hack ul > li:after {
   content: "-";
 }
@@ -125,6 +122,9 @@
 .hack ol > li:after {
   content: counter(ol) ".";
   counter-increment: ol;
+}
+.hack ol li:nth-child(n+10):after {
+  left: -7px;
 }
 .hack blockquote {
   position: relative;
