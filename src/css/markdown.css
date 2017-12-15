@@ -123,6 +123,9 @@
   content: counter(ol) ".";
   counter-increment: ol;
 }
+.hack ol li:nth-child(n+10):after {
+  left: -7px;
+}
 .hack blockquote {
   position: relative;
   padding-left: 17px;
