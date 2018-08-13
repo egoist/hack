@@ -64,7 +64,8 @@ For more usages and style guideline head to [the website](http://hackcss.egoist.
 ## Related projects
 
 - [Jekyll theme for Hack](https://github.com/wemake-services/jekyll-theme-hackcss)
-- [Hugo theme for Hack](https://github.com/comfusion/after-dark)
+- [Hugo theme for Hack](https://themes.gohugo.io/after-dark)
+- [Gutenberg theme for Hack](https://www.getgutenberg.io/themes/after-dark/)
 
 ## Development
 
