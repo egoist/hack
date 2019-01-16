@@ -66,11 +66,15 @@ gulp.task('static', () => {
 })
 
 gulp.task('watch', () => {
-  gulp.watch(paths.css.all, ['css'])
-  gulp.watch(paths.html.all, ['html'])
-  gulp.watch(paths.static.all, ['static'])
+  gulp.watch(paths.css.all, gulp.series(['css']))
+  gulp.watch(paths.html.all, gulp.series(['html']))
+  gulp.watch(paths.static.all, gulp.series(['static']))
+  return Promise.resolve();
 })
 
-gulp.task('build', ['css', 'html', 'static'])
+gulp.task('build', () => {
+  gulp.parallel(['css', 'html', 'static'])
+  return Promise.resolve();
+})
 
-gulp.task('default', ['build', 'watch', 'serve'])
+gulp.task('default', gulp.series(['build', 'watch', 'serve']))
