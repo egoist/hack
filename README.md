@@ -67,6 +67,10 @@ For more usages and style guideline head to [the website](http://hackcss.egoist.
 - [Hugo theme for Hack](https://after-dark.habd.as)
 - [Gutenberg theme for Hack](https://www.getgutenberg.io/themes/after-dark/)
 
+## Mirrors
+
+- https://git.habd.as/jhabdas/hack
+
 ## Development
 
 ```bash
