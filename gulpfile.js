@@ -30,7 +30,7 @@ gulp.task('serve', serve({
 }))
 
 gulp.task('css', () => {
-  gulp.src(paths.css.entry)
+  return gulp.src(paths.css.entry)
     .pipe(postcss([
       require('postcss-import')(),
       require('postcss-mixins'),
@@ -47,8 +47,7 @@ gulp.task('css', () => {
 })
 
 gulp.task('html', () => {
-  const d = new Date()
-  gulp.src(paths.html.entry)
+  return gulp.src(paths.html.entry)
     .pipe(jade({
       pretty: true,
       locals: {
@@ -61,16 +60,17 @@ gulp.task('html', () => {
 })
 
 gulp.task('static', () => {
-  gulp.src(paths.static.entry)
+  return gulp.src(paths.static.entry)
     .pipe(gulp.dest('./demo'))
 })
 
 gulp.task('watch', () => {
-  gulp.watch(paths.css.all, ['css'])
-  gulp.watch(paths.html.all, ['html'])
-  gulp.watch(paths.static.all, ['static'])
+  gulp.watch(paths.css.all, gulp.series(['css']))
+  gulp.watch(paths.html.all, gulp.series(['html']))
+  gulp.watch(paths.static.all, gulp.series(['static']))
+  return Promise.resolve();
 })
 
-gulp.task('build', ['css', 'html', 'static'])
+gulp.task('build', gulp.series('css', 'html', 'static'))
 
-gulp.task('default', ['build', 'watch', 'serve'])
+gulp.task('default', gulp.series('build', 'watch', 'serve'))

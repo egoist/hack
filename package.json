@@ -33,7 +33,7 @@
   "devDependencies": {
     "color-preset": "^0.1.1",
     "cssnano": "^3.7.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-jade": "^1.1.0",
     "gulp-postcss": "^6.1.1",
     "gulp-serve": "^1.4.0",
@@ -42,5 +42,9 @@
     "postcss-import": "^8.1.2",
     "postcss-mixins": "^5.0.0",
     "postcss-simple-vars": "^3.0.0"
+  },
+  "dependencies": {
+    "minimatch": "^3.0.4",
+    "uglify-js": "^3.4.9"
   }
 }
