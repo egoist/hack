@@ -49,8 +49,13 @@ Option #2: hot-link the css files:
 <body class="hack dark-grey"></body>
 
 <!-- solarized-dark theme -->
-<link rel="stylesheet" href="/path/to/solarized-dark.css">
+<link rel="stylesheet" href="/path/to/solarized.css">
 <body class="hack solarized-dark"></body>
+```
+
+<!-- solarized-light theme -->
+<link rel="stylesheet" href="/path/to/solarized.css">
+<body class="hack solarized-light"></body>
 ```
 
 It's also available on [CDNJS](https://cdnjs.com/libraries/hack), [jsDelivr](http://cdn.jsdelivr.net/npm/hack/dist/) and [UNPKG](https://unpkg.com/hack/).

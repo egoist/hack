@@ -4,6 +4,33 @@
 
 .solarized-dark {
   background-color: $solarized-dark-color-bg;
+
+  & pre {
+    background-color: $solarized-dark-color-bg;
+  }
+
+  & .form-group {
+    &.form-textarea label:after {
+      background-color: $solarized-dark-color-bg;
+    }
+  }
+}
+
+.solarized-light {
+  background-color: $solarized-light-color-bg;
+
+  & pre {
+    background-color: $solarized-light-color-bg;
+  }
+
+  & .form-group {
+    &.form-textarea label:after {
+      background-color: $solarized-light-color-bg;
+    }
+  }
+}
+
+.solarized-dark, .solarized-light {
   color: $blue-grey-400;
 
   & h1,
@@ -24,7 +51,6 @@
   }
 
   & pre {
-    background-color: $solarized-dark-color-bg;
     padding: 0;
     border: none;
     & code {
@@ -82,9 +108,6 @@
     & label {
       color: $blue-grey-400;
       border-color: $blue-grey-300;
-    }
-    &.form-textarea label:after {
-      background-color: $solarized-dark-color-bg;
     }
   }
 
