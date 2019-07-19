@@ -174,11 +174,6 @@
   width: 100%;
   word-wrap: break-word;
 }
-@-moz-document url-prefix() {
-  .hack h1 {
-    display: block;
-  }
-}
 .hack-ones ol > li:after {
   content: "1.";
 }
