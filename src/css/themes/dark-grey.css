@@ -119,4 +119,14 @@
       }
     }
   }
+
+  /**
+   * Modal
+   */
+  & .modal .modal-content {
+    border-radius: .6em;
+    box-shadow: 0 0 6px 3px #ccc;
+    background-color: $dark-grey-bg;
+    color: #ccc;
+  }
 }

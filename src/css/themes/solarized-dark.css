@@ -147,4 +147,14 @@
       }
     }
   }
+
+  /**
+   * Modal
+   */
+  & .modal .modal-content {
+    border-radius: .6em;
+    box-shadow: 0 0 6px 3px $blue-grey-400;
+    background-color: $solarized-dark-color-bg;
+    color: $blue-grey-400;
+  }
 }

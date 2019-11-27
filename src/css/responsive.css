@@ -30,3 +30,10 @@
     width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .modal.open .modal-content,
+  .modal:target .modal-content {
+    width: 70vw;
+  }
+}

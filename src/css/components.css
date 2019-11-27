@@ -390,3 +390,47 @@ select.form-control {
     }
   }
 }
+
+/**
+ * Modal
+ */
+.modal {
+  display: none;
+  position: fixed;
+  background: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  z-index: 9000;
+  transition: background 1s;
+  visibility: hidden;
+
+  &:target, &.open {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    visibility: visible;
+  }
+
+  & .modal-content {
+    padding: 20px 20px 10px 20px;
+    background: #fff;
+    color: #000;
+    width: 50vw;
+    border-radius: .2em;
+    position: relative;
+    max-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+
+    & .modal-footer {
+      text-align: right;
+    }
+
+    & > * {
+      width: 100%;
+    }
+  }
+}

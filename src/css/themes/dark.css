@@ -119,4 +119,11 @@
       }
     }
   }
+
+  & .modal .modal-content {
+    border-radius: .6em;
+    box-shadow: 0 0 6px 3px #ccc;
+    background: black;
+    color: white;
+  }
 }

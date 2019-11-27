@@ -259,6 +259,40 @@ h4 Menu
   </div>
   ```
 
+h4#modal-dialogs Modal Dialogs
+
+p Modals are hidden by default. They open with the class <code>open</code> or by referencing its ID from the URL fragment.
+
+.example
+  a.btn.btn-primary.btn-block.btn-ghost(href="#open-modal") Open Modal Dialog
+  .modal#open-modal
+    .modal-content
+      .modal-header
+        h1 Modal Example
+      .modal-body
+        p Elit non impedit quos adipisicing vel? Eius nostrum atque illo facilis inventore, fugit Totam veritatis quos esse minus maiores Molestiae est reprehenderit ad itaque delectus pariatur quos. Nisi eaque quod.
+      .modal-footer
+        a.btn.btn-primary.btn-ghost(href="#modal-dialogs") Close
+
+:marked
+  ```html
+  <a href="#open-modal">Open Modal Dialog</a>
+
+  <div id="open-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Modal Example</h1>
+      </div>
+      <div class="modal-body">
+        <p>Lorem Ipsum</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#">Close</a>
+      </div>
+    </div>
+  </div>
+  ```
+
 h4 Media
 
 p This is useful if you intend to display a list of items, like the Twitter timeline.
